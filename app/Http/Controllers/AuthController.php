@@ -27,20 +27,32 @@ class AuthController extends Controller
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:8',
             'country' => 'required|string|max:255',
-            'state' => 'required_if:country,*|string|max:255',
+            'state' => 'nullable|string|max:255',
             'phone' => 'required|string|max:20',
             'role' => 'required|string|max:255',
             'academic_degree' => 'required|string|max:255',
             'institution' => 'required|string|max:255',
-            'other_institution' => 'nullable|string|max:255|required_if:institution,Otra',
+            'other_institution' => 'nullable|string|max:255|required_if:institution,otra',
             'matricula' => 'nullable|string|max:9|required_if:institution,BUAP',
             'faculty' => 'nullable|string|max:255|required_if:institution,BUAP',
             'how_found' => 'required|string|max:255',
         ], [
-            'state.required_if' => 'El campo estado es obligatorio cuando se selecciona un país.',
+            'fullname.required' => 'El nombre completo es obligatorio.',
+            'email.required' => 'El correo electrónico es obligatorio.',
+            'email.email' => 'El correo electrónico debe tener un formato válido.',
+            'email.unique' => 'Este correo electrónico ya está registrado.',
+            'password.required' => 'La contraseña es obligatoria.',
+            'password.min' => 'La contraseña debe tener al menos 8 caracteres.',
+            'country.required' => 'El país es obligatorio.',
+            'state.string' => 'El estado debe ser un texto válido.',
+            'phone.required' => 'El número de teléfono es obligatorio.',
+            'role.required' => 'Debe seleccionar si es alumno o profesionista.',
+            'academic_degree.required' => 'El grado académico es obligatorio.',
+            'institution.required' => 'La institución es obligatoria.',
             'other_institution.required_if' => 'El nombre de la institución es obligatorio cuando selecciona "Otra".',
             'matricula.required_if' => 'La matrícula es obligatoria cuando selecciona "BUAP".',
             'faculty.required_if' => 'La facultad es obligatoria cuando selecciona "BUAP".',
+            'how_found.required' => 'Debe indicar cómo se enteró del congreso.',
         ]);
         
         $userData = [
@@ -67,7 +79,10 @@ class AuthController extends Controller
         
         Auth::login($user);
         
-        return redirect()->route('user.inicio')->with('success', '¡Registro exitoso! Bienvenido a CONACIC.');
+        return redirect()->route('registro')->with('success', '¡Registro completado exitosamente! Ya puedes acceder a tu cuenta. Serás redirigido al panel de usuario en unos segundos.');
+        
+        // Alternativa: redirigir directamente al panel de usuario
+        // return redirect()->route('user.inicio')->with('success', '¡Registro exitoso! Bienvenido a CONACIC.');
     }
     
     /**

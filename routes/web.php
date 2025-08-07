@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PublicController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\TallerController;
+use App\Http\Controllers\UserController;
 
 Route::controller(PublicController::class)->group(function(){
 
@@ -24,7 +25,7 @@ Route::controller(AuthController::class)->group(function(){
 });
 
 // Rutas de usuario (requieren autenticación)
-Route::controller(App\Http\Controllers\UserController::class)->middleware('auth')->group(function(){
+Route::controller(UserController::class)->middleware('auth')->group(function(){
     Route::get('/user/inicio', 'inicioUser')->name('user.inicio');
 });
 
@@ -32,4 +33,13 @@ Route::controller(App\Http\Controllers\UserController::class)->middleware('auth'
 Route::controller(TallerController::class)->middleware('auth')->group(function(){
     Route::get('/user/registrotalleres/taller1', 'taller1')->name('taller1');
     Route::post('/user/registrotalleres/taller1', 'registrarTaller1')->name('registrarTaller1');
+    
+    Route::get('/user/registrotalleres/taller2', 'taller2')->name('taller2');
+    Route::post('/user/registrotalleres/taller2', 'registrarTaller2')->name('registrarTaller2');
+    
+    Route::get('/user/registrotalleres/taller3', 'taller3')->name('taller3');
+    Route::post('/user/registrotalleres/taller3', 'registrarTaller3')->name('registrarTaller3');
+    
+    Route::get('/user/registrotalleres/taller4', 'taller4')->name('taller4');
+    Route::post('/user/registrotalleres/taller4', 'registrarTaller4')->name('registrarTaller4');
 });

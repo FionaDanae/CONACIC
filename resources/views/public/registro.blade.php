@@ -16,6 +16,56 @@
             <h2 class="text-3xl font-bold text-[#061d3f] text-center mb-8">REGISTRO CONACIC 2025</h2>
             <h2 class="text-3xl font-bold text-[#061d3f] text-center mb-8">BIENVENIDOS</h2>
 
+            <!-- Mensajes de éxito y error -->
+            @if(session('success'))
+                 <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-6" role="alert" id="success-message">
+                     <div class="flex">
+                         <div class="py-1">
+                             <svg class="fill-current h-6 w-6 text-green-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                 <path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"/>
+                             </svg>
+                         </div>
+                         <div>
+                             <p class="font-bold">¡Registro exitoso!</p>
+                             <p class="text-sm">{{ session('success') }}</p>
+                             <div class="mt-3">
+                                 <a href="{{ route('user.inicio') }}" class="inline-block bg-[#1669bc] text-white px-4 py-2 rounded hover:bg-[#23b0d8] transition-colors">
+                                     Ir al Panel de Usuario
+                                 </a>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 
+                 <script>
+                     // Redirigir automáticamente después de 5 segundos
+                     setTimeout(function() {
+                         window.location.href = '{{ route('user.inicio') }}';
+                     }, 5000);
+                 </script>
+             @endif
+
+            @if($errors->any())
+                <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-6" role="alert">
+                    <div class="flex">
+                        <div class="py-1">
+                            <svg class="fill-current h-6 w-6 text-red-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                <path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-bold">Error en el registro</p>
+                            <p class="text-sm">Por favor, corrija los siguientes errores:</p>
+                            <ul class="text-sm mt-2">
+                                @foreach($errors->all() as $error)
+                                    <li>• {{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            @endif
+
             <form action="{{ route('registro.submit') }}" method="POST" class="space-y-8">
                 @csrf
                 <!-- Personal Data Section -->
@@ -498,8 +548,8 @@
 
                         <!-- Academic Degree -->
                         <div>
-                            <label for="degree" class="block text-sm font-medium text-gray-700">Último grado académico <span class="text-red-500">*</span></label>
-                            <select id="degree" name="degree" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#23b0d8] focus:ring-[#23b0d8] focus:bg-white active:bg-white">
+                            <label for="academic_degree" class="block text-sm font-medium text-gray-700">Último grado académico <span class="text-red-500">*</span></label>
+                            <select id="academic_degree" name="academic_degree" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#23b0d8] focus:ring-[#23b0d8] focus:bg-white active:bg-white">
                                 <option value="">Seleccione su grado académico</option>
                                 <option value="media_superior">Media superior</option>
                                 <option value="licenciatura">Licenciatura</option>
@@ -508,6 +558,9 @@
                                 <option value="tecnico">Técnico</option>
                                 <option value="otro">Otro</option>
                             </select>
+                            @error('academic_degree')
+                                <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+                            @enderror
                         </div>
 
                         <!-- Institution -->
@@ -585,8 +638,8 @@
 
                         <!-- How did you hear about us -->
                         <div>
-                            <label for="source" class="block text-sm font-medium text-gray-700">¿Cómo te enteraste del congreso? <span class="text-red-500">*</span></label>
-                            <select id="source" name="source" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#23b0d8] focus:ring-[#23b0d8] focus:bg-white active:bg-white">
+                            <label for="how_found" class="block text-sm font-medium text-gray-700">¿Cómo te enteraste del congreso? <span class="text-red-500">*</span></label>
+                            <select id="how_found" name="how_found" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#23b0d8] focus:ring-[#23b0d8] focus:bg-white active:bg-white">
                                 <option value="">Seleccione una opción</option>
                                 <option value="social_media">Redes sociales</option>
                                 <option value="email">Correo Electrónico</option>
@@ -594,6 +647,9 @@
                                 <option value="website">Página web</option>
                                 <option value="other">Otro</option>
                             </select>
+                            @error('how_found')
+                                <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+                            @enderror
                         </div>
                     </div>
                 </div>

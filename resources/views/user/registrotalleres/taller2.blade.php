@@ -12,7 +12,7 @@
     <div class="relative z-10 container mx-auto px-4 py-16">
         <div class="max-w-3xl mx-auto bg-white/95 backdrop-blur-sm rounded-lg shadow-xl p-8">
             <h2 class="text-3xl font-bold text-[#061d3f] text-center mb-8">Registro al Taller</h2>
-            <h3 class="text-2xl font-bold text-[#1669bc] text-center mb-6">De Enigmas a Evidencias: Taller Práctico de Análisis Forense</h3>
+            <h3 class="text-2xl font-bold text-[#1669bc] text-center mb-6">Taller de Desarrollo de Aplicaciones Móviles con Flutter</h3>
 
             @if(session('success'))
                 <div class="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 mb-6" role="alert">
@@ -63,7 +63,7 @@
 
                 <div class="mt-6 p-4 bg-gray-100 rounded-lg">
                     <h6 class="font-semibold text-[#061d3f] mb-2">Material Requerido:</h6>
-                    <p class="text-gray-600">Computadora, software de virtualización (vmware, virtualbox), Distribución Kali o Parrot y conexión a internet</p>
+                    <p class="text-gray-600">Computadora con Flutter SDK instalado, Android Studio o VS Code, dispositivo móvil o emulador Android/iOS</p>
                 </div>
 
                 <div class="flex justify-center mt-6">
@@ -73,7 +73,7 @@
                 </div>
             @else
                 <!-- Si no está registrado, mostrar formulario de registro -->
-                <form action="{{ route('registrarTaller1') }}" method="POST" class="space-y-6">
+                <form action="{{ route('registrarTaller2') }}" method="POST" class="space-y-6">
                     @csrf
                     <!-- Datos del usuario -->
                     <div class="space-y-6">
@@ -104,7 +104,7 @@
 
                     <div class="mt-6 p-4 bg-gray-100 rounded-lg">
                         <h6 class="font-semibold text-[#061d3f] mb-2">Material Requerido:</h6>
-                        <p class="text-gray-600">Computadora, software de virtualización (vmware, virtualbox), Distribución Kali o Parrot y conexión a internet</p>
+                        <p class="text-gray-600">Computadora con Flutter SDK instalado, Android Studio o VS Code, dispositivo móvil o emulador Android/iOS</p>
                     </div>
 
                     <div class="bg-yellow-50 border-l-4 border-yellow-500 text-yellow-700 p-4" role="alert">
