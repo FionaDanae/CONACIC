@@ -16,7 +16,7 @@
             <h2 class="text-3xl font-bold text-[#061d3f] text-center mb-8">REGISTRO CONACIC 2025</h2>
             <h2 class="text-3xl font-bold text-[#061d3f] text-center mb-8">BIENVENIDOS</h2>
 
-            <form action="#" method="POST" class="space-y-8">
+            <form action="{{ route('registro.submit') }}" method="POST" class="space-y-8">
                 @csrf
                 <!-- Personal Data Section -->
                 <div class="space-y-6">
@@ -28,6 +28,9 @@
                             <label for="fullname" class="block text-sm font-medium text-gray-700">Nombre completo <span class="text-red-500">*</span></label>
                             <input type="text" id="fullname" name="fullname" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#23b0d8] focus:ring-[#23b0d8] focus:bg-white">
                             <p class="mt-1 text-sm text-gray-500">Verifique que su nombre esté completo y correcto ya que será utilizado para sus respectivas constancias.</p>
+                            @error('fullname')
+                                <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+                            @enderror
                         </div>
 
                         <!-- Email -->
@@ -35,6 +38,19 @@
                             <label for="email" class="block text-sm font-medium text-gray-700">Correo electrónico <span class="text-red-500">*</span></label>
                             <input type="email" id="email" name="email" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#23b0d8] focus:ring-[#23b0d8] focus:bg-white">
                             <p class="mt-1 text-sm text-gray-500">Por este medio recibirá las constancias correspondientes, use preferentemente su correo institucional.</p>
+                            @error('email')
+                                <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+                            @enderror
+                        </div>
+                        
+                        <!-- Password -->
+                        <div>
+                            <label for="password" class="block text-sm font-medium text-gray-700">Contraseña <span class="text-red-500">*</span></label>
+                            <input type="password" id="password" name="password" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#23b0d8] focus:ring-[#23b0d8] focus:bg-white">
+                            <p class="mt-1 text-sm text-gray-500">Mínimo 8 caracteres. Esta contraseña será utilizada para acceder a su cuenta.</p>
+                            @error('password')
+                                <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+                            @enderror
                         </div>
 
                         <!-- Country -->
@@ -82,7 +98,7 @@
                                 <option value="CA">Canadá</option>
                                 <option value="TD">Chad</option>
                                 <option value="CL">Chile</option>
-                                <option value="CN">China</option>
+                                                                <option value="CN">China</option>
                                 <option value="CY">Chipre</option>
                                 <option value="VA">Ciudad del Vaticano</option>
                                 <option value="CO">Colombia</option>
@@ -229,11 +245,55 @@
                                 <option value="LC">Santa Lucía</option>
                                 <option value="ST">Santo Tomé y Príncipe</option>
                                 <option value="SN">Senegal</option>
-                                <option value="MX">México</option>
-                                <option value="US">Estados Unidos</option>
-                                <option value="CO">Colombia</option>
                                 <!-- Add more countries as needed -->
                             </select>
+                            @error('country')
+                                <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+                            @enderror
+                        </div>
+                        
+                        <!-- State -->
+                        <div id="stateContainer" class="hidden">
+                            <label for="state" class="block text-sm font-medium text-gray-700">Estado <span class="text-red-500">*</span></label>
+                            <select id="state" name="state" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#23b0d8] focus:ring-[#23b0d8] focus:bg-white">
+                                <option value="">Seleccione un estado</option>
+                                <option value="Aguascalientes">Aguascalientes</option>
+                                <option value="Baja California">Baja California</option>
+                                <option value="Baja California Sur">Baja California Sur</option>
+                                <option value="Campeche">Campeche</option>
+                                <option value="Chiapas">Chiapas</option>
+                                <option value="Chihuahua">Chihuahua</option>
+                                <option value="Ciudad de México">Ciudad de México</option>
+                                <option value="Coahuila">Coahuila</option>
+                                <option value="Colima">Colima</option>
+                                <option value="Durango">Durango</option>
+                                <option value="Estado de México">Estado de México</option>
+                                <option value="Guanajuato">Guanajuato</option>
+                                <option value="Guerrero">Guerrero</option>
+                                <option value="Hidalgo">Hidalgo</option>
+                                <option value="Jalisco">Jalisco</option>
+                                <option value="Michoacán">Michoacán</option>
+                                <option value="Morelos">Morelos</option>
+                                <option value="Nayarit">Nayarit</option>
+                                <option value="Nuevo León">Nuevo León</option>
+                                <option value="Oaxaca">Oaxaca</option>
+                                <option value="Puebla">Puebla</option>
+                                <option value="Querétaro">Querétaro</option>
+                                <option value="Quintana Roo">Quintana Roo</option>
+                                <option value="San Luis Potosí">San Luis Potosí</option>
+                                <option value="Sinaloa">Sinaloa</option>
+                                <option value="Sonora">Sonora</option>
+                                <option value="Tabasco">Tabasco</option>
+                                <option value="Tamaulipas">Tamaulipas</option>
+                                <option value="Tlaxcala">Tlaxcala</option>
+                                <option value="Veracruz">Veracruz</option>
+                                <option value="Yucatán">Yucatán</option>
+                                <option value="Zacatecas">Zacatecas</option>
+                            </select>
+                            <input type="text" id="otherState" name="state" class="mt-1 hidden w-full rounded-md border-gray-300 shadow-sm focus:border-[#23b0d8] focus:ring-[#23b0d8] focus:bg-white" placeholder="Ingrese su estado/provincia">
+                            @error('state')
+                                <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+                            @enderror
                         </div>
 
                         <!-- Phone Number -->
@@ -458,6 +518,69 @@
                                 <option value="BUAP">BUAP</option>
                                 <option value="otra">Otra</option>
                             </select>
+                            @error('institution')
+                                <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+                            @enderror
+                        </div>
+
+                        <!-- BUAP Fields (hidden by default) -->
+                        <div id="buapFields" class="hidden space-y-4">
+                            <!-- Matricula -->
+                            <div>
+                                <label for="matricula" class="block text-sm font-medium text-gray-700">Matrícula <span class="text-red-500">*</span></label>
+                                <input type="text" id="matricula" name="matricula" maxlength="9" pattern="[0-9]{9}" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#23b0d8] focus:ring-[#23b0d8] focus:bg-white" placeholder="Ingrese su matrícula (9 dígitos)">
+                                <p class="text-xs text-gray-500 mt-1">La matrícula debe contener exactamente 9 dígitos</p>
+                                @error('matricula')
+                                    <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+                                @enderror
+                            </div>
+
+                            <!-- Facultad -->
+                            <div>
+                                <label for="faculty" class="block text-sm font-medium text-gray-700">Facultad <span class="text-red-500">*</span></label>
+                                <select id="faculty" name="faculty" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#23b0d8] focus:ring-[#23b0d8] focus:bg-white active:bg-white">
+                                    <option value="">Seleccione su facultad</option>
+                                    <option value="Computación">Ciencias de la Computación</option>
+                                    <option value="Electrónica">Ciencias de la Electrónica</option>
+                                    <option value="Ciencias Biológicas">Ciencias Biológicas</option>
+                                    <option value="Químicas">Ciencias Químicas</option>
+                                    <option value="Química">Ingeniería Química</option>
+                                    <option value="Ingeniería">Ingeniería</option>
+                                    <option value="Arquitectura">Arquitectura</option>
+                                    <option value="Administración">Administración</option>
+                                    <option value="Comunicación">Ciencias de la Comunicación</option>
+                                    <option value="Contaduría">Contaduría Pública</option>
+                                    <option value="Derecho">Derecho</option>
+                                    <option value="Economía">Economía</option>
+                                    <option value="Físco Matemáticas">Físco Matemáticas</option>
+                                    <option value="Cultura Física">Cultura Física</option>                                
+                                    <option value="Electrónica">Electrónica</option>
+                                    <option value="Agrícolas y Pecuarias">Ciencias Agrícolas y Pecuarias</option>
+                                    <option value="Enfermería">Enfermería</option>
+                                    <option value="Estomatología">Estomatología</option>
+                                    <option value="Medicina">Medicina</option>
+                                    <option value="Veterinaria">Medicina Veterinaria y Zootecnia</option>
+                                    <option value="Cultura Física">Cultura Física</option>
+                                    <option value="Filosofía y Letras">Filosofía y Letras</option>
+                                    <option value="Lenguas">Lenguas</option>
+                                    <option value="Artes">Artes</option>
+                                    <option value="Psicología">Psicología</option>
+                                    <option value="Complejo Regional">Complejo Regional</option>
+                                    <option value="Preparatorias">Preparatorias</option>
+                                </select>
+                                @error('faculty')
+                                    <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <!-- Other Institution Field (hidden by default) -->
+                        <div id="otherInstitutionField" class="hidden">
+                            <label for="other_institution" class="block text-sm font-medium text-gray-700">Nombre de la institución <span class="text-red-500">*</span></label>
+                            <input type="text" id="other_institution" name="other_institution" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#23b0d8] focus:ring-[#23b0d8] focus:bg-white" placeholder="Escribe el nombre de tu institución">
+                            @error('other_institution')
+                                <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+                            @enderror
                         </div>
 
                         <!-- How did you hear about us -->
@@ -485,4 +608,98 @@
         </div>
     </div>
 </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Elementos del formulario
+        const countrySelect = document.getElementById('country');
+        const stateContainer = document.getElementById('stateContainer');
+        const stateSelect = document.getElementById('state');
+        const otherState = document.getElementById('otherState');
+        const institutionSelect = document.getElementById('institution');
+        const buapFields = document.getElementById('buapFields');
+        const otherInstitutionField = document.getElementById('otherInstitutionField');
+        const matriculaInput = document.getElementById('matricula');
+        const facultySelect = document.getElementById('faculty');
+        const otherInstitutionInput = document.getElementById('other_institution');
+        
+        // Asegurarse de que los campos requeridos estén correctamente configurados
+        stateSelect.required = false;
+        otherState.required = false;
+
+        // Función para manejar el cambio de país
+        countrySelect.addEventListener('change', function() {
+            if (this.value === 'MX') {
+                stateSelect.style.display = 'block';
+                otherState.style.display = 'none';
+                stateSelect.required = true;
+                otherState.required = false;
+                stateContainer.classList.remove('hidden');
+            } else if (this.value) {
+                stateSelect.style.display = 'none';
+                otherState.style.display = 'block';
+                stateSelect.required = false;
+                otherState.required = true;
+                stateContainer.classList.remove('hidden');
+            } else {
+                stateContainer.classList.add('hidden');
+                stateSelect.required = false;
+                otherState.required = false;
+            }
+        });
+
+        // Inicializar el estado del campo de estado basado en el país seleccionado
+        // Ejecutar el evento change al cargar la página para configurar correctamente el campo de estado
+        if (countrySelect.value) {
+            // Disparar el evento change para inicializar correctamente
+            const event = new Event('change');
+            countrySelect.dispatchEvent(event);
+        }
+
+        // Función para manejar el cambio de institución
+        institutionSelect.addEventListener('change', function() {
+            if (this.value === 'BUAP') {
+                buapFields.classList.remove('hidden');
+                otherInstitutionField.classList.add('hidden');
+                matriculaInput.required = true;
+                facultySelect.required = true;
+                otherInstitutionInput.required = false;
+            } else if (this.value === 'otra') {
+                buapFields.classList.add('hidden');
+                otherInstitutionField.classList.remove('hidden');
+                matriculaInput.required = false;
+                facultySelect.required = false;
+                otherInstitutionInput.required = true;
+            } else {
+                buapFields.classList.add('hidden');
+                otherInstitutionField.classList.add('hidden');
+                matriculaInput.required = false;
+                facultySelect.required = false;
+                otherInstitutionInput.required = false;
+            }
+        });
+
+        // Inicializar el estado de los campos de institución
+        if (institutionSelect.value) {
+            // Disparar el evento change para inicializar correctamente
+            const institutionEvent = new Event('change');
+            institutionSelect.dispatchEvent(institutionEvent);
+        } else {
+            // Asegurarse de que los campos estén ocultos inicialmente
+            buapFields.classList.add('hidden');
+            otherInstitutionField.classList.add('hidden');
+            matriculaInput.required = false;
+            facultySelect.required = false;
+            otherInstitutionInput.required = false;
+        }
+
+        // Validación de matrícula (solo números y exactamente 9 dígitos)
+        matriculaInput.addEventListener('input', function() {
+            this.value = this.value.replace(/[^0-9]/g, '');
+            if (this.value.length > 9) {
+                this.value = this.value.slice(0, 9);
+            }
+        });
+    });
+</script>
 @endsection

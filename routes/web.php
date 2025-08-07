@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PublicController;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\TallerController;
 
 Route::controller(PublicController::class)->group(function(){
 
@@ -12,4 +14,22 @@ Route::controller(PublicController::class)->group(function(){
     Route::get('/libros', 'libros')->name('libros');
     Route::get('/acceso', 'acceso')->name('acceso');
     Route::get('/galeria', 'galeria')->name('galeria');
+});
+
+// Rutas de autenticación
+Route::controller(AuthController::class)->group(function(){
+    Route::post('/registro', 'registro')->name('registro.submit');
+    Route::post('/acceso', 'acceso')->name('acceso.submit');
+    Route::post('/logout', 'logout')->name('logout');
+});
+
+// Rutas de usuario (requieren autenticación)
+Route::controller(App\Http\Controllers\UserController::class)->middleware('auth')->group(function(){
+    Route::get('/user/inicio', 'inicioUser')->name('user.inicio');
+});
+
+// Rutas para talleres (requieren autenticación)
+Route::controller(TallerController::class)->middleware('auth')->group(function(){
+    Route::get('/user/registrotalleres/taller1', 'taller1')->name('taller1');
+    Route::post('/user/registrotalleres/taller1', 'registrarTaller1')->name('registrarTaller1');
 });

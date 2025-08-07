@@ -40,8 +40,20 @@
                 <li><a href="{{route('inicio')}}" class="nav-link uppercase font-bold text-xs text-white">INICIO</a></li>
                 <li><a href="{{route('convocatoria')}}" class="nav-link uppercase font-bold text-xs text-white">CONVOCATORIA</a></li>
                 <li><a href="{{route('programa')}}" class="nav-link uppercase font-bold text-xs text-white">PROGRAMA</a></li>
+                @guest
                 <li><a href="{{route('registro')}}" class="nav-link uppercase font-bold text-xs text-white">REGISTRO</a></li>
                 <li><a href="{{route('acceso')}}" class="nav-link uppercase font-bold text-xs text-white">ACCESO</a></li>
+                @else
+                <li>
+                    <span class="text-white text-xs font-bold">{{ Auth::user()->name }}</span>
+                </li>
+                <li>
+                    <form action="{{ route('logout') }}" method="POST" class="inline">
+                        @csrf
+                        <button type="submit" class="nav-link uppercase font-bold text-xs text-white hover:text-red-400">CERRAR SESIÓN</button>
+                    </form>
+                </li>
+                @endguest
                 <li><a href="{{route('libros')}}" class="nav-link uppercase font-bold text-xs text-white">LIBROS</a></li>
             </ul>
         </nav>

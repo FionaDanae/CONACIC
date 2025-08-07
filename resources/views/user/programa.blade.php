@@ -178,7 +178,7 @@
                                     <h6 class="font-semibold text-[#061d3f] mb-2">Material Requerido:</h6>
                                     <p class="text-gray-600">Computadora, software de virtualización (vmware, virtualbox), Distribución Kali o Parrot y conexión a internet</p>
                                 </div>
-                                <a href="{{ route('taller1') }}" class="inline-block bg-[#23b0d8] text-white px-4 py-2 rounded-lg hover:bg-[#1a8bb0] transition-colors mt-4">
+                                <a href="{{route('taller1')}}" class="nav-link uppercase font-bold text-xs text-white">TALLER 1</a></li>
                                     Registrate al taller
                                 </a>
                             </div>

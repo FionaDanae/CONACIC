@@ -17,7 +17,7 @@
                 <p class="text-gray-600 mt-2">Ingresa a tu cuenta de CONACIC</p>
             </div>
 
-            <form action="#" method="POST" class="space-y-6">
+            <form action="{{ route('acceso.submit') }}" method="POST" class="space-y-6">
                 @csrf
                 <!-- Email -->
                 <div>
@@ -27,6 +27,21 @@
                                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#23b0d8] focus:border-transparent transition-colors"
                                placeholder="ejemplo@alumno.buap.mx">
                     </div>
+                    @error('email')
+                        <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+                    @enderror
+                </div>
+
+                <!-- Password -->
+                <div>
+                    <label for="password" class="block text-sm font-medium text-gray-700">Contraseña</label>
+                    <div class="mt-1">
+                        <input type="password" name="password" id="password" required 
+                               class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#23b0d8] focus:border-transparent transition-colors">
+                    </div>
+                    @error('password')
+                        <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+                    @enderror
                 </div>
 
                 <div>
