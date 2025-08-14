@@ -5,7 +5,7 @@
 @section('contenido')
 <section class="py-16 bg-gray-50">
     <div class="container mx-auto px-4">
-        <h1 class="text-4xl font-bold text-[#061d3f] mb-8 text-center">Programa CONACIC 2024</h1>
+        <h1 class="text-4xl font-bold text-[#061d3f] mb-8 text-center">Programa CONACIC 2025</h1>
 
         <!-- Programa de Conferencias -->
         <div class="bg-white rounded-lg shadow-lg p-8 mb-8">

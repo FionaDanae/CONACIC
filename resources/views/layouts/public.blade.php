@@ -147,7 +147,7 @@
 <footer class="bg-[#05225c] text-white p-10">
     <div class="max-w-[1300px] mx-auto">
         <div class="text-center mb-8">
-            <h2 class="text-2xl font-bold">CONACIC 2024</h2>
+            <h2 class="text-2xl font-bold">CONACIC 2025</h2>
             <p class="text-white mt-2">Innovando en las Ciencias de la Computación</p>
         </div>
         <nav class="grid grid-flow-col gap-8 mb-8 justify-center">

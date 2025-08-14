@@ -12,7 +12,7 @@
             <div class="flex items-start text-[#061d3f]">
                 <i class="material-icons text-3xl mr-4">info</i>
                 <p class="text-gray-700 leading-relaxed">
-                    El Comité Organizador del VI Congreso Internacional y XIV Congreso Nacional de Ciencias de la Computación, CONACIC 2024, invita a la comunidad científica y académica a participar.
+                    El Comité Organizador del VII Congreso Internacional y XV Congreso Nacional de Ciencias de la Computación, CONACIC 2025, invita a la comunidad científica y académica a participar.
                 </p>
             </div>
         </div>
@@ -65,19 +65,25 @@
                     <tbody class="bg-white divide-y divide-gray-200">
                         <tr>
                             <td class="px-6 py-4 whitespace-nowrap text-gray-700">Lanzamiento de convocatoria</td>
-                            <td class="px-6 py-4 whitespace-nowrap font-bold text-[#2E8B57]">20 de abril</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-[#2E8B57]">28 de marzo</td>
                         </tr>
                         <tr>
                             <td class="px-6 py-4 whitespace-nowrap text-gray-700">Deadline</td>
-                            <td class="px-6 py-4 whitespace-nowrap font-bold text-[#2E8B57]">5 de agosto</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-[#2E8B57]">7 de julio</td>
                         </tr>
                         <tr>
-                            <td class="px-6 py-4 whitespace-nowrap text-gray-700">Notificación de aceptación o rechazo</td>
-                            <td class="px-6 py-4 whitespace-nowrap font-bold text-[#2E8B57]">11 de septiembre</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-gray-700">
+                            Notificación de aceptación o rechazo 
+                            <span class="text-blue-500 font-bold ml-2">Nueva Fecha</span>
+                            </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-[#2E8B57]">
+                            <span class="line-through text-black" style="text-decoration-color: red;">11 de agosto</span>
+                            <span class="text-blue-500 font-bold ml-2">18 de agosto</span>
+                        </td>
                         </tr>
                         <tr>
                             <td class="px-6 py-4 whitespace-nowrap text-gray-700">Entrega versión final</td>
-                            <td class="px-6 py-4 whitespace-nowrap font-bold text-[#2E8B57]">18 de septiembre</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-[black]">1 de septiembre</td>
                         </tr>
                     </tbody>
                 </table>
@@ -111,6 +117,15 @@
                     <i class="fas fa-chalkboard-teacher text-[#23b0d8]"></i>
                     <span class="text-gray-700">TIC's en la Educación</span>
                 </div>
+                <!-- cambiar iconos-->
+                <div class="flex items-center space-x-3">
+                    <i class="fas fa-chart-line text-[#23b0d8]"></i>
+                    <span class="text-gray-700">Ciencia de Datos</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <i class="fas fa-server text-[#23b0d8]"></i>
+                    <span class="text-gray-700">Sistemas Distribuidos</span>
+                </div>
                 <div class="flex items-center space-x-3">
                     <i class="fas fa-shield-alt text-[#23b0d8]"></i>
                     <span class="text-gray-700">CyberSeguridad</span>
@@ -130,6 +145,14 @@
                 <div class="flex items-center space-x-3">
                     <i class="fas fa-robot text-[#23b0d8]"></i>
                     <span class="text-gray-700">Robótica</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <i class="fas fa-vr-cardboard text-[#23b0d8]"></i>
+                    <span class="text-gray-700">Realidad Virtual y Aumentada</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <i class="fas fa-microchip text-[#23b0d8]"></i>
+                    <span class="text-gray-700">Sistemas Embebidos</span>
                 </div>
             </div>
         </div>

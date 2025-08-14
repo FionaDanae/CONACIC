@@ -276,4 +276,18 @@
     </div>
 </section>
 
+    <!-- Botón flotante para ir al programa -->
+    <div style="position: fixed; bottom: 24px; right: 24px; z-index: 1000;">
+        <a href="{{ route('programa') }}" style="position: relative; display: block; text-decoration: none;" onmouseover="this.querySelector('.btn-circle').style.transform='scale(1.1)'; this.querySelector('.tooltip').style.opacity='1';" onmouseout="this.querySelector('.btn-circle').style.transform='scale(1)'; this.querySelector('.tooltip').style.opacity='0';">
+            <div class="btn-circle" style="background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%); color: white; width: 64px; height: 64px; border-radius: 50%; box-shadow: 0 10px 25px rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center; transition: all 0.3s ease; cursor: pointer;">
+                <i class="fas fa-calendar-alt" style="font-size: 20px;"></i>
+            </div>
+            <!-- Tooltip -->
+            <div class="tooltip" style="position: absolute; bottom: 100%; right: 0; margin-bottom: 8px; padding: 8px 12px; background-color: #374151; color: white; font-size: 14px; border-radius: 8px; opacity: 0; transition: opacity 0.3s ease; white-space: nowrap; pointer-events: none;">
+                Ver Programa
+                <div style="position: absolute; top: 100%; right: 16px; width: 0; height: 0; border-left: 4px solid transparent; border-right: 4px solid transparent; border-top: 4px solid #374151;"></div>
+            </div>
+        </a>
+    </div>
+
 @endsection
