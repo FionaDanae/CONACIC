@@ -20,4 +20,16 @@ class UserController extends Controller
             
         return view('user.iniciouser', compact('registrosTalleres'));
     }
+
+    public function perfil(){
+        return view('user.perfil');
+    }
+
+    public function programa(){
+        return view('user.programa');
+    }
+
+    public function libros(){
+        return view('user.libros');
+    }
 }

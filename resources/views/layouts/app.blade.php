@@ -143,13 +143,13 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white px-3 py-2 rounded-3 mx-1" href="{{ route('programa') }}" style="transition: all 0.3s ease;">
+                        <a class="nav-link text-white px-3 py-2 rounded-3 mx-1" href="{{ route('user.programa') }}" style="transition: all 0.3s ease;">
                             <i class="fas fa-calendar me-1"></i> 
                             <span class="fw-semibold">Programa</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white px-3 py-2 rounded-3 mx-1" href="{{ route('libros') }}" style="transition: all 0.3s ease;">
+                        <a class="nav-link text-white px-3 py-2 rounded-3 mx-1" href="{{ route('user.libros') }}" style="transition: all 0.3s ease;">
                             <i class="fas fa-book me-1"></i> 
                             <span class="fw-semibold">Libros</span>
                         </a>
@@ -167,7 +167,7 @@
                                 <small class="text-muted">Conectado como:</small><br>
                                 <strong>{{ Auth::user()->name }}</strong>
                             </li>
-                            <li><a class="dropdown-item py-2" href="#"><i class="fas fa-user-edit me-2 text-primary"></i> Mi Perfil</a></li>
+                            <li><a class="dropdown-item py-2" href="{{ route('user.perfil') }}"><i class="fas fa-user-edit me-2 text-primary"></i> Mi Perfil</a></li>
                             <li><a class="dropdown-item py-2" href="{{ route('user.inicio') }}"><i class="fas fa-tachometer-alt me-2 text-success"></i> Dashboard</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li>

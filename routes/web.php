@@ -29,6 +29,18 @@ Route::controller(UserController::class)->middleware('auth')->group(function(){
     Route::get('/user/inicio', 'inicioUser')->name('user.inicio');
 });
 
+Route::controller(UserController::class)->middleware('auth')->group(function(){
+    Route::get('/user/perfil', 'perfil')->name('user.perfil');
+});
+
+Route::controller(UserController::class)->middleware('auth')->group(function(){
+    Route::get('/user/programa', 'programa')->name('user.programa');
+});
+
+Route::controller(UserController::class)->middleware('auth')->group(function(){
+    Route::get('/user/libros', 'libros')->name('user.libros');
+});
+
 // Rutas para talleres (requieren autenticación)
 Route::controller(TallerController::class)->middleware('auth')->group(function(){
     Route::get('/user/registrotalleres/taller1', 'taller1')->name('taller1');
