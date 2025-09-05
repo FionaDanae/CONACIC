@@ -111,11 +111,10 @@
 </head>
 <body class="bg-gray-100">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark shadow-lg" style="background: linear-gradient(135deg, #05225c 0%, #1669bc 50%, #23b0d8 100%);">
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-lg align-items-center" style="background: linear-gradient(135deg, #05225c 0%, #1669bc 50%, #23b0d8 100%);">
         <div class="container">
-            <a class="navbar-brand text-white fw-bold" href="{{ route('user.inicio') }}">
-                <img src="{{ asset('images/CONACIC.png') }}" alt="CONACIC" height="40" class="me-2">
-                CONACIC 2025
+            <a class="navbar-brand text-white fw-bold d-flex align-items-center" href="{{ route('user.inicio') }}">
+                <img src="{{ asset('images/CONACIC.png') }}" alt="CONACIC" class="me-2 img-fluid" style="height:50px;">
             </a>
             
             <button class="navbar-toggler border-0 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -123,7 +122,7 @@
             </button>
             
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto align-items-center">
                     <li class="nav-item">
                         <a class="nav-link text-white px-3 py-2 rounded-3 mx-1 transition-all" href="{{ route('user.inicio') }}" style="transition: all 0.3s ease;">
                             <i class="fas fa-home me-1"></i> 
@@ -156,7 +155,7 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-white px-3 py-2 rounded-3 d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="transition: all 0.3s ease;">
-                            <div class="bg-white bg-opacity-20 rounded-circle p-2 me-2 user-avatar">
+                            <div class="bg-white bg-opacity-20 rounded-circle p-2 me-2 user-avatar d-flex justify-content-center align-items-center" style="width:36px; height:36px;">
                                 <i class="fas fa-user text-white"></i>
                             </div>
                             <span class="fw-semibold d-none d-md-inline">{{ Auth::user()->name }}</span>

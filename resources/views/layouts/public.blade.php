@@ -39,7 +39,7 @@
             <ul class="flex gap-3 md:gap-5 lg:gap-10">
                 <li><a href="{{route('inicio')}}" class="nav-link uppercase font-bold text-xs text-white">INICIO</a></li>
                 <li><a href="{{route('convocatoria')}}" class="nav-link uppercase font-bold text-xs text-white">CONVOCATORIA</a></li>
-                <li><a href="{{route('programa')}}" class="nav-link uppercase font-bold text-xs text-white">PROGRAMA</a></li>
+                <li><a href="{{route('programa')}}" class="nav-link uppercase font-bold text-xs text-white animate-neon-intense">PROGRAMA</a></li>
                 @guest
                 <li><a href="{{route('registro')}}" class="nav-link uppercase font-bold text-xs text-white">REGISTRO</a></li>
                 <li><a href="{{route('acceso')}}" class="nav-link uppercase font-bold text-xs text-white">ACCESO</a></li>
@@ -117,6 +117,7 @@
             <img class="max-w-[490px] w-full object-contain" src="/images/CONACIC ROBOT.png" alt="CONACIC Robot">
         </div>
     </section>
+    <!-- 
     <div
         class="flex relative z-30 justify-center sm:justify-between gap-5 items-center mt-6 mx-auto max-w-[1300px] rounded-[90px] py-2 px-3 sm:p-6 lg:p-10 bg-gradient-to-r from-[#FF7300] via-[#0c3c82] to-[#FF7300]">
         <div class="flex sm:flex-1 gap-4 lg:gap-6">
@@ -136,7 +137,7 @@
                 </a>
             </div>
         </div>
-    </div>
+    </div> -->
 @endif
 
 <main class="flex-1 relative overflow-hidden">
@@ -153,7 +154,7 @@
         <nav class="grid grid-flow-col gap-8 mb-8 justify-center">
             <a href="{{route('inicio')}}" class="nav-link uppercase font-bold text-xs">Inicio</a>
             <a href="{{route('convocatoria')}}" class="nav-link uppercase font-bold text-xs">Convocatoria</a>
-            <a href="{{route('programa')}}" class="nav-link uppercase font-bold text-xs">Programa</a>
+            <a href="{{route('programa')}}" class="nav-link uppercase font-bold text-xs text-white animate-neon-intense">Programa</a>
             <a href="{{route('registro')}}" class="nav-link uppercase font-bold text-xs">Registro</a>
         </nav>
         <nav class="mb-8">

@@ -13,12 +13,12 @@
             
             <!-- Timeline Container -->
             <div class="space-y-8">
-                <!-- Lunes 7 de Octubre -->
+                <!-- Lunes 6 de Octubre -->
                 <div class="bg-gray-50 rounded-lg p-6">
-                    <h3 class="text-xl font-bold text-[#061d3f] mb-4">Lunes 7 de Octubre</h3>
+                    <h3 class="text-xl font-bold text-[#061d3f] mb-4">Lunes 6 de Octubre</h3>
                     <div class="space-y-4">
                         <div class="flex items-start">
-                            <span class="text-[#23b0d8] font-semibold w-32">09:30 - 16:00</span>
+                            <span class="text-[#23b0d8] font-semibold w-32">16:00 - 19:00</span>
                             <div>
                                 <h4 class="font-semibold text-[#061d3f]">Ponencias On Demand CONACIC 2024</h4>
                                 <p class="text-gray-600 mb-2">¡Bienvenidos al Congreso Nacional de Ciencias de la Computación 2024!</p>
@@ -155,24 +155,24 @@
             
             <!-- Timeline Container -->
             <div class="space-y-8">
-                <!-- Lunes 7 de Octubre -->
+                <!-- Lunes 6 de Octubre -->
                 <div class="bg-gray-50 rounded-lg p-6">
-                    <h3 class="text-xl font-bold text-[#061d3f] mb-4">Lunes 7 de Octubre</h3>
+                    <h3 class="text-xl font-bold text-[#061d3f] mb-4">Lunes 6 de Octubre</h3>
                     <div class="space-y-4">
                         <div class="flex items-start">
-                            <span class="text-[#23b0d8] font-semibold w-32">16:00 - 19:00</span>
+                            <span class="text-[#23b0d8] font-semibold w-32">16:00-19:00</span>
                             <div>
                                 <div class="flex items-center gap-4 mb-2">
                                     <div class="flex items-center gap-4">
                                         <img src="{{ asset('images/Lic.EdgarRafaelMedinaLozano.png') }}" alt="Lic. Edgar Rafael Medina Lozano" class="w-16 h-16 rounded-full object-cover border-2 border-[#061d3f]">
-                                        <h4 class="font-semibold text-[#061d3f]">Lic. Edgar Rafael Medina Lozano</h4>
+                                        <h4 class="font-semibold text-[#061d3f]">M.C. Saulo Abraham Gante Díaz</h4>
                                     </div>
                                     <button onclick="document.getElementById('modal-edgar').classList.remove('hidden')" class="text-sm bg-[#FFC72C] text-[#061d3f] px-3 py-1 rounded hover:bg-[#FFD700] transition-colors">
                                         Ver perfil
                                     </button>
                                 </div>
-                                <p class="text-gray-600">EPAM SYSTEMS</p>
-                                <h5 class="font-semibold text-[#061d3f] mt-2">De Enigmas a Evidencias: Taller Práctico de Análisis Forense</h5>
+                                <p class="text-gray-600">CIC-IPN MÉXICO</p>
+                                <h5 class="font-semibold text-[#061d3f] mt-2">SALA 1: Reconstrucción en 3D</h5>
                                 <p class="text-gray-600 mt-2">En este taller vamos a emprender un viaje en el mundo de la seguridad defensiva, haciendo énfasis en las tareas de investigación que se realizan como parte del proceso de respuesta a incidentes y el análisis forense con un enfoque practico orientado al resolver un caso de envenenamiento a nivel de red.</p>
                                 <div class="mt-4 p-4 bg-gray-100 rounded-lg">
                                     <h6 class="font-semibold text-[#061d3f] mb-2">Material Requerido:</h6>
@@ -186,24 +186,42 @@
                     </div>
                 </div>
 
-                <!-- Martes 8 de Octubre -->
+                <!-- Martes 7 de Octubre -->
                 <div class="bg-gray-50 rounded-lg p-6">
-                    <h3 class="text-xl font-bold text-[#061d3f] mb-4">Martes 8 de Octubre</h3>
+                    <h3 class="text-xl font-bold text-[#061d3f] mb-4">Martes 7 de Octubre</h3>
                     <div class="space-y-4">
                         <div class="flex items-start">
-                            <span class="text-[#23b0d8] font-semibold w-32">16:00 - 19:00</span>
+                            <span class="text-[#23b0d8] font-semibold w-32">16:00-19:00</span>
                             <div>
                                 <div class="flex items-center gap-4 mb-2">
                                     <div class="flex items-center gap-4">
                                         <img src="{{ asset('images/M.C.BeatrizAlejadraFloresRojas.jpg') }}" alt="M. C. Beatriz Alejandra Flores Rojas" class="w-16 h-16 rounded-full object-cover border-2 border-[#061d3f]">
-                                        <h4 class="font-semibold text-[#061d3f]">M. C. Beatriz Alejandra Flores Rojas</h4>
+                                        <h4 class="font-semibold text-[#061d3f]">Lic. José Soto Pérez</h4>
                                     </div>
                                     <button onclick="document.getElementById('modal-beatriz').classList.remove('hidden')" class="text-sm bg-[#FFC72C] text-[#061d3f] px-3 py-1 rounded hover:bg-[#FFD700] transition-colors">
                                         Ver perfil
                                     </button>
                                 </div>
-                                <p class="text-gray-600">Benemérita Universidad Autónoma de Puebla</p>
-                                <h5 class="font-semibold text-[#061d3f] mt-2">Herramientas para Análisis Descriptivo y Predictivo</h5>
+                                <p class="text-gray-600">Benemérita</p>
+                                <h5 class="font-semibold text-[#061d3f] mt-2">Sala 1: Project Manager</h5>
+                                <p class="text-gray-600 mt-2">Conocer herramientas de análisis descriptivo y predictivo es crucial para tomar decisiones informadas en diversos campos. El análisis descriptivo permite entender el estado actual de los datos, identificando patrones, relaciones y tendencias a partir de información histórica. Esto es fundamental para evaluar situaciones, detectar problemas o áreas de oportunidad, y comunicar hallazgos de manera clara. Por su parte, el análisis predictivo permite anticipar futuros escenarios, proyectando comportamientos y posibles resultados con base en datos pasados. Esto es vital en la planificación estratégica, ya que ayuda a prever riesgos, optimizar recursos y diseñar estrategias adaptativas. El dominio de ambas herramientas ofrece una visión integral: el análisis descriptivo proporciona una base sólida de conocimiento sobre la realidad actual, mientras que el predictivo facilita una preparación proactiva ante posibles cambios. En conjunto, permiten mejorar la precisión en la toma de decisiones y el diseño de estrategias efectivas. Existen diversas herramientas que respaldan estos tipos de análisis, como Power BI, Orange, Jupyter, entre otras.</p>
+                                <p class="text-gray-600 mt-2">Material: Equipo de computo, Power BI Desktop de microsoft, Orange y Jupiter (de anaconda).</p>
+                                <div class="flex gap-4 mt-4">
+                                    <a href="https://dcytic2.webex.com/dcytic2/j.php?MTID=m0fa3cc4403c2e070199fbe2158c0823c" class="inline-block bg-[#23b0d8] text-white px-4 py-2 rounded-lg hover:bg-[#1a8bb0] transition-colors">Registrate al taller</a>
+                                    <a href="https://drive.google.com/drive/folders/103LCuwSetgkcREMLy6b_z3_EyB_IXWq_?usp=sharing" class="inline-block bg-[#23b0d8] text-white px-4 py-2 rounded-lg hover:bg-[#1a8bb0] transition-colors">Descargar Materiales</a>
+                                </div>
+                                <div class="flex items-center gap-4 mb-2">
+                                    <div class="flex items-center gap-4">
+                                        <img src="{{ asset('images/M.C.BeatrizAlejadraFloresRojas.jpg') }}" alt="M. C. Beatriz Alejandra Flores Rojas" class="w-16 h-16 rounded-full object-cover border-2 border-[#061d3f]">
+                                        <h4 class="font-semibold text-[#061d3f]">M.C. Griselda Cortés Barrera</h4>
+                                        <h4 class="font-semibold text-[#061d3f]">M.C. Edgar Corona Organiche</h4>
+                                    </div>
+                                    <button onclick="document.getElementById('modal-beatriz').classList.remove('hidden')" class="text-sm bg-[#FFC72C] text-[#061d3f] px-3 py-1 rounded hover:bg-[#FFD700] transition-colors">
+                                        Ver perfil
+                                    </button>
+                                </div>
+                                <p class="text-gray-600">Benemérita</p>
+                                <h5 class="font-semibold text-[#061d3f] mt-2">Sala 2: Adquisición y preprocesamiento de señales EEG</h5>
                                 <p class="text-gray-600 mt-2">Conocer herramientas de análisis descriptivo y predictivo es crucial para tomar decisiones informadas en diversos campos. El análisis descriptivo permite entender el estado actual de los datos, identificando patrones, relaciones y tendencias a partir de información histórica. Esto es fundamental para evaluar situaciones, detectar problemas o áreas de oportunidad, y comunicar hallazgos de manera clara. Por su parte, el análisis predictivo permite anticipar futuros escenarios, proyectando comportamientos y posibles resultados con base en datos pasados. Esto es vital en la planificación estratégica, ya que ayuda a prever riesgos, optimizar recursos y diseñar estrategias adaptativas. El dominio de ambas herramientas ofrece una visión integral: el análisis descriptivo proporciona una base sólida de conocimiento sobre la realidad actual, mientras que el predictivo facilita una preparación proactiva ante posibles cambios. En conjunto, permiten mejorar la precisión en la toma de decisiones y el diseño de estrategias efectivas. Existen diversas herramientas que respaldan estos tipos de análisis, como Power BI, Orange, Jupyter, entre otras.</p>
                                 <p class="text-gray-600 mt-2">Material: Equipo de computo, Power BI Desktop de microsoft, Orange y Jupiter (de anaconda).</p>
                                 <div class="flex gap-4 mt-4">
@@ -215,31 +233,24 @@
                     </div>
                 </div>
 
-                <!-- Miércoles 9 de Octubre -->
+                <!-- Miércoles 8 de Octubre -->
                 <div class="bg-gray-50 rounded-lg p-6">
-                    <h3 class="text-xl font-bold text-[#061d3f] mb-4">Miércoles 9 de Octubre</h3>
+                    <h3 class="text-xl font-bold text-[#061d3f] mb-4">Miércoles 8 de Octubre</h3>
                     <div class="space-y-4">
                         <div class="flex items-start">
-                            <span class="text-[#23b0d8] font-semibold w-32">16:00 - 19:00</span>
+                            <span class="text-[#23b0d8] font-semibold w-32">16:00-19:00</span>
                             <div>
                                 <div class="flex items-center gap-4 mb-2">
                                     <div class="flex items-center gap-4">
                                         <img src="{{ asset('images/Dra. AnaLuisaBallinasHernández.jpeg') }}" alt="Dra. Ana Luisa Ballinas Hernández" class="w-16 h-16 rounded-full object-cover border-2 border-[#061d3f]">
-                                        <h4 class="font-semibold text-[#061d3f]">Dra. Ana Luisa Ballinas Hernández</h4>
+                                        <h4 class="font-semibold text-[#061d3f]">Ing. Sebástian Méndez Méndez</h4>
                                     </div>
                                     <button onclick="document.getElementById('modal-ana').classList.remove('hidden')" class="text-sm bg-[#FFC72C] text-[#061d3f] px-3 py-1 rounded hover:bg-[#FFD700] transition-colors">
                                         Ver perfil
                                     </button>
                                 </div>
-                                <p class="text-gray-600">Benemérita Universidad Autónoma de Puebla Complejo Regional Centro sede San José Chiapa</p>
-                                <div class="flex items-center gap-4 mb-2 mt-4">
-                                    <h4 class="font-semibold text-[#061d3f]">Lic. Eduardo Ocelotl Valencia</h4>
-                                    <button onclick="document.getElementById('modal-eduardo').classList.remove('hidden')" class="text-sm bg-[#FFC72C] text-[#061d3f] px-3 py-1 rounded hover:bg-[#FFD700] transition-colors">
-                                        Ver perfil
-                                    </button>
-                                </div>
                                 <p class="text-gray-600">Benemérita Universidad Autónoma de Puebla</p>
-                                <h5 class="font-semibold text-[#061d3f] mt-2">Construcción de Aplicaciones Móviles Usando Realidad Aumentada</h5>
+                                <h5 class="font-semibold text-[#061d3f] mt-2">Ánalisis avanzado de eventos de ciberseguridad</h5>
                                 <p class="text-gray-600 mt-2">En este taller conocerás los conceptos básicos de realidad aumentada y aprenderás a construir aplicaciones móviles que incluyan la tecnología de realidad aumentada para superponer elementos virtuales con el mundo real. Las aplicaciones generadas se podrán instalar en dispositivos con sistema operativo Android. La lectura del mundo real se realiza mediante la cámara del dispositivo, de forma que al leer un marcador se detonan los objetos virtuales que son añadidos al mundo real. Para la creación de aplicaciones usaremos el motor de videojuegos Unity 3D y la biblioteca Vuforia, así como el lenguaje de programación C#.</p>
                                 <p class="text-gray-600 mt-2">Material: Laptop, Unity Hub, Editor de Unity 2022.3.17f1 LTS, Vuforia Engine 10.25, ⁠Dispositivo Android , Cable USB para el dispositivo Android.</p>
                                 <div class="flex gap-4 mt-4">
@@ -251,23 +262,23 @@
                     </div>
                 </div>
 
-                <!-- Jueves 10 de Octubre -->
+                <!-- Jueves 9 de Octubre -->
                 <div class="bg-gray-50 rounded-lg p-6">
-                    <h3 class="text-xl font-bold text-[#061d3f] mb-4">Jueves 10 de Octubre</h3>
+                    <h3 class="text-xl font-bold text-[#061d3f] mb-4">Jueves 9 de Octubre</h3>
                     <div class="space-y-4">
                         <div class="flex items-start">
-                            <span class="text-[#23b0d8] font-semibold w-32">16:00 - 19:00</span>
+                            <span class="text-[#23b0d8] font-semibold w-32">16:00-19:00</span>
                             <div>
                                 <div class="flex items-center gap-4 mb-2">
                                     <div class="flex items-center gap-4">
                                         <img src="{{ asset('images/Lic.EduardoOcelotlValencia.jpg') }}" alt="Lic. Eduardo Ocelotl Valencia" class="w-16 h-16 rounded-full object-cover border-2 border-[#061d3f]">
-                                        <h4 class="font-semibold text-[#061d3f]">Lic. Eduardo Ocelotl Valencia</h4>
+                                        <h4 class="font-semibold text-[#061d3f]">M.C. Jonathan Axel Cruz Vázquez</h4>
                                     </div>
                                     <button onclick="document.getElementById('modal-eduardo').classList.remove('hidden')" class="text-sm bg-[#FFC72C] text-[#061d3f] px-3 py-1 rounded hover:bg-[#FFD700] transition-colors">
                                         Ver perfil
                                     </button>
                                 </div>
-                                <p class="text-gray-600">Instituto Politécnico Nacional</p>
+                                <p class="text-gray-600">CIC-Instituto Politécnico Nacional</p>
                                 <h5 class="font-semibold text-[#061d3f] mt-2">Redes Neuronales Artificiales: Conceptos, Relevancia y Aplicaciones</h5>
                                 <p class="text-gray-600 mt-2">Las redes neuronales artificiales se han convertido en una herramienta muy útil en los últimos años para resolver problemas de toda índole. Los avances en esta materia se han dado, por un lado, por la mejor comprensión que se tiene de su operación y, por otro lado, por la consolidación en el desarrollo de procesadores que permiten que los algoritmos de aprendizaje asociados se hayan desarrollado. En este tutorial, después de una introducción, se verá un conjunto de conceptos relacionados con las redes neuronales artificiales como modelos operativos de los cerebros biológicos. Enseguida, se verá por qué las redes neuronales artificiales son hoy en día una herramienta tan poderosa. Finalmente, se abordará una aplicación de las redes neuronales a la generación de modelos matemáticos a partir de datos, en particular, para el cálculo de características de objetos en dos y tres dimensiones, como son su área, perímetro y número de Euler.</p>
                                 <div class="mt-4">

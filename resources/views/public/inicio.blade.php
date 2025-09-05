@@ -22,6 +22,56 @@
         </div>
     </div>
 </section>
+
+<section class="bg-gray-50 py-16">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-[#061d3f] text-center mb-6">Plantillas para Presentaciones</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <!-- Ponencias Simultáneas -->
+            <div class="bg-white rounded-lg shadow-lg p-6 transform hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center text-center">
+                <div class="text-[#061d3f] text-4xl mb-4 flex justify-center">
+                    <i class="fas fa-users-rectangle"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-[#061d3f] mb-3 text-center">Ponencias Simultáneas</h3>
+                <p class="text-gray-600 mb-6 text-center">Plantilla para presentaciones en sesiones paralelas</p>
+                <div class="flex justify-center">
+                    <a href="https://conacic.siycise.org/docs/CONACIC2024_PLANTILLA_PARA_PONENCIAS_SIMULTANEAS.pptx" class="inline-block bg-gradient-to-r from-[#1669bc] to-[#23b0d8] text-white font-bold py-2 px-6 rounded-full hover:opacity-90 transition-opacity">
+                        Descargar
+                    </a>
+                </div>
+            </div>
+
+            <!-- Conferencistas -->
+            <div class="bg-white rounded-lg shadow-lg p-6 transform hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center text-center">
+                <div class="text-[#061d3f] text-4xl mb-4 flex justify-center">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-[#061d3f] mb-3 text-center">Conferencistas</h3>
+                <p class="text-gray-600 mb-6 text-center">Plantilla para conferencias magistrales</p>
+                <div class="flex justify-center">
+                    <a href="https://conacic.siycise.org/docs/CONACIC2024_PLANTILLA_PARA_CONFERENCISTA.pptx" class="inline-block bg-gradient-to-r from-[#1669bc] to-[#23b0d8] text-white font-bold py-2 px-6 rounded-full hover:opacity-90 transition-opacity">
+                        Descargar
+                    </a>
+                </div>
+            </div>
+
+            <!-- Talleristas -->
+            <div class="bg-white rounded-lg shadow-lg p-6 transform hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center text-center">
+                <div class="text-[#061d3f] text-4xl mb-4 flex justify-center">
+                    <i class="fas fa-person-chalkboard"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-[#061d3f] mb-3 text-center">Talleristas</h3>
+                <p class="text-gray-600 mb-6 text-center">Plantilla para talleres y sesiones prácticas</p>
+                <div class="flex justify-center">
+                    <a href="https://conacic.siycise.org/docs/CONACIC2024_PLANTILLA_PARA_TALLERISTAS.pptx" class="inline-block bg-gradient-to-r from-[#1669bc] to-[#23b0d8] text-white font-bold py-2 px-6 rounded-full hover:opacity-90 transition-opacity">
+                        Descargar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="bg-white py-16">
     <div class="container mx-auto px-4">
         <h2 class="text-3xl font-bold text-[#061d3f] text-center mb-6">Comité Organizador</h2>
@@ -180,61 +230,12 @@
     
     <div class="relative z-10 container mx-auto px-4">
         <div class="max-w-3xl mx-auto text-center">
-            <h2 class="text-4xl md:text-5xl font-bold mb-8 text-[#FFC72C]">9°. WORKSHOP DE PROYECTOS DE INVESTIGACIÓN JUNIOR</h2>
+            <h2 class="text-4xl md:text-5xl font-bold mb-8 text-[#FFC72C]">WORKSHOP DE PROYECTOS DE INVESTIGACIÓN JUNIOR</h2>
             <a href="https://siycise.org/workshop/" class="inline-block">
                 <button class="bg-gradient-to-r from-[#FFC72C] to-[#FFD700] text-[#061d3f] font-bold py-4 px-10 rounded-full text-xl hover:from-[#FFD700] hover:to-[#FFC72C] transition-all duration-300 transform hover:scale-105 shadow-lg">
                     Únete ahora
                 </button>
             </a>
-        </div>
-    </div>
-</section>
-
-<section class="bg-gray-50 py-16">
-    <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-[#061d3f] text-center mb-6">Plantillas para Presentaciones</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <!-- Ponencias Simultáneas -->
-            <div class="bg-white rounded-lg shadow-lg p-6 transform hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center text-center">
-                <div class="text-[#061d3f] text-4xl mb-4 flex justify-center">
-                    <i class="fas fa-users-rectangle"></i>
-                </div>
-                <h3 class="text-xl font-semibold text-[#061d3f] mb-3 text-center">Ponencias Simultáneas</h3>
-                <p class="text-gray-600 mb-6 text-center">Plantilla para presentaciones en sesiones paralelas</p>
-                <div class="flex justify-center">
-                    <a href="https://conacic.siycise.org/docs/CONACIC2024_PLANTILLA_PARA_PONENCIAS_SIMULTANEAS.pptx" class="inline-block bg-gradient-to-r from-[#1669bc] to-[#23b0d8] text-white font-bold py-2 px-6 rounded-full hover:opacity-90 transition-opacity">
-                        Descargar
-                    </a>
-                </div>
-            </div>
-
-            <!-- Conferencistas -->
-            <div class="bg-white rounded-lg shadow-lg p-6 transform hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center text-center">
-                <div class="text-[#061d3f] text-4xl mb-4 flex justify-center">
-                    <i class="fas fa-chalkboard-teacher"></i>
-                </div>
-                <h3 class="text-xl font-semibold text-[#061d3f] mb-3 text-center">Conferencistas</h3>
-                <p class="text-gray-600 mb-6 text-center">Plantilla para conferencias magistrales</p>
-                <div class="flex justify-center">
-                    <a href="https://conacic.siycise.org/docs/CONACIC2024_PLANTILLA_PARA_CONFERENCISTA.pptx" class="inline-block bg-gradient-to-r from-[#1669bc] to-[#23b0d8] text-white font-bold py-2 px-6 rounded-full hover:opacity-90 transition-opacity">
-                        Descargar
-                    </a>
-                </div>
-            </div>
-
-            <!-- Talleristas -->
-            <div class="bg-white rounded-lg shadow-lg p-6 transform hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center text-center">
-                <div class="text-[#061d3f] text-4xl mb-4 flex justify-center">
-                    <i class="fas fa-person-chalkboard"></i>
-                </div>
-                <h3 class="text-xl font-semibold text-[#061d3f] mb-3 text-center">Talleristas</h3>
-                <p class="text-gray-600 mb-6 text-center">Plantilla para talleres y sesiones prácticas</p>
-                <div class="flex justify-center">
-                    <a href="https://conacic.siycise.org/docs/CONACIC2024_PLANTILLA_PARA_TALLERISTAS.pptx" class="inline-block bg-gradient-to-r from-[#1669bc] to-[#23b0d8] text-white font-bold py-2 px-6 rounded-full hover:opacity-90 transition-opacity">
-                        Descargar
-                    </a>
-                </div>
-            </div>
         </div>
     </div>
 </section>
