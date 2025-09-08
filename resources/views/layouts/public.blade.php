@@ -157,11 +157,36 @@
 </footer>
 
 <script>
-    const menuBtn = document.getElementById('menu-btn');
-    const mainMenu = document.getElementById('main-menu');
+    document.addEventListener('DOMContentLoaded', function() {
+        // Menú hamburguesa en layout público
+        const menuBtn = document.getElementById('menu-btn');
+        const mainMenu = document.getElementById('main-menu');
 
-    menuBtn.addEventListener('click', () => {
-        mainMenu.classList.toggle('hidden');
+        if (menuBtn && mainMenu) {
+            menuBtn.addEventListener('click', () => {
+                mainMenu.classList.toggle('hidden');
+                console.log('Menú público toggled');
+            });
+        }
+        
+        // Soporte para menú móvil en welcome.blade.php
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                console.log('Menú móvil toggled');
+                
+                // Cambiar icono del botón
+                const icons = mobileMenuButton.querySelectorAll('svg');
+                if (icons && icons.length >= 2) {
+                    icons.forEach(icon => {
+                        icon.classList.toggle('hidden');
+                    });
+                }
+            });
+        }
     });
 </script>
 

@@ -39,17 +39,56 @@
             <!-- Timeline Container -->
             <div class="space-y-8">
                 <!-- Lunes 6 de Octubre -->
-                <div class="bg-gray-50 rounded-lg p-6">
-                    <h3 class="text-xl font-bold text-[#061d3f] mb-4">Lunes 6 de Octubre</h3>
-                    <div class="space-y-4">
-                        <div class="flex items-start">
-                            <span class="text-[#23b0d8] font-semibold w-32">16:00 - 19:00</span>
-                            <div>
-                                <h4 class="font-semibold text-[#061d3f]">Ponencias On Demand CONACIC 2024</h4>
-                                <p class="text-gray-600 mb-2">¡Bienvenidos al Congreso Nacional de Ciencias de la Computación 2024!</p>
-                                <a href="https://conacic.siycise.org/simultaneas/" class="inline-block bg-[#23b0d8] text-white px-4 py-2 rounded-lg hover:bg-[#1a8bb0] transition-colors">
-                                    Ingresar a las Ponencias
+                <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-8 shadow-lg border-l-4 border-[#23b0d8]">
+                    <div class="flex items-center justify-center mb-6">
+                        <div class="bg-[#061d3f] text-white px-6 py-3 rounded-full font-bold text-lg shadow-md">
+                            📅 Lunes 6 de Octubre
+                        </div>
+                    </div>
+                    <div class="max-w-6xl mx-auto space-y-6">
+                        <!-- Ponencias On Demand -->
+                        <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 border-l-4 border-[#FFC72C]">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="bg-[#FFC72C] text-[#061d3f] px-4 py-2 rounded-full font-bold text-sm">⏰ 10:00 - 13:00</span>
+                                <span class="bg-[#23b0d8] text-white px-3 py-1 rounded-full text-sm font-semibold"> Ponencias On Demand</span>
+                            </div>
+                            <h4 class="font-bold text-[#061d3f] text-xl mb-3">Ponencias On Demand CONACIC 2025  </h4>
+                            <p class="text-gray-700 mb-4 leading-relaxed">¡Bienvenidos al Congreso Nacional de Ciencias de la Computación 2024! Continúa explorando las ponencias disponibles.</p>
+                            <div class="flex justify-center">
+                                <a href="https://dcytic2.webex.com/dcytic2/j.php?MTID=m0fa3cc4403c2e070199fbe2158c0823c" class="bg-gradient-to-r from-[#FFC72C] to-[#FFD700] text-[#061d3f] px-6 py-3 rounded-lg hover:shadow-lg transition-all duration-300 font-semibold flex items-center gap-2">
+                                    🎊 Ingresar a las Ponencias
                                 </a>
+                            </div>
+                        </div>
+
+                        <!-- M.C. Saulo Abraham Gante Diaz -->
+                        <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 border-l-4 border-[#23b0d8]">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="bg-[#23b0d8] text-white px-4 py-2 rounded-full font-bold text-sm">⏰ 10:00 - 11:00</span>
+                                <span class="bg-[#FFC72C] text-[#061d3f] px-3 py-1 rounded-full text-sm font-semibold">🎓 Conferencia Magistral</span>
+                            </div>
+                            
+                            <div class="flex flex-col md:flex-row gap-6">
+                                <div class="flex items-center gap-4 md:w-1/3">
+                                    <img src="{{ asset('images/Dr.ErikRodnerRodner.jpg') }}" alt="M.C. Saulo Abraham Gante Diaz" class="w-20 h-20 rounded-full object-cover border-4 border-[#23b0d8] shadow-lg">
+                                    <div>
+                                        <h4 class="font-bold text-[#061d3f] text-lg">M.C. Saulo Abraham Gante Diaz</h4>
+                                        <p class="text-gray-600 text-sm">CIC-IPN, México</p>
+                                        <button onclick="document.getElementById('modal-saulo').classList.remove('hidden')" class="mt-2 bg-[#FFC72C] text-[#061d3f] px-3 py-1 rounded-lg hover:bg-[#FFD700] transition-colors text-sm font-semibold shadow-md">
+                                            👤 Ver perfil
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                                <div class="md:w-2/3">
+                                    <h5 class="font-bold text-[#061d3f] text-xl mb-3 border-b-2 border-[#23b0d8] pb-2">Reconstrucción 3D</h5>
+                                    <p class="text-gray-700 text-sm leading-relaxed mb-4">Machine learning has become an everyday technology we are surrounded with. Furthermore, the speed of innovation has increased dramatically, presenting a vast number of opportunities but also critical challenges. In my talk, I will give an overview of current advances, discuss the future ahead of us (at least a prediction for the next few weeks), and link some of the challenges to research done in my lab.</p>
+                                    <div class="flex justify-center">
+                                        <a href="https://dcytic2.webex.com/dcytic2/j.php?MTID=m0fa3cc4403c2e070199fbe2158c0823c" class="bg-gradient-to-r from-[#23b0d8] to-[#1a8bb0] text-white px-6 py-3 rounded-lg hover:shadow-lg transition-all duration-300 font-semibold flex items-center gap-2">
+                                            🎯 Ingresar a la Conferencia
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
