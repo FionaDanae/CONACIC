@@ -307,24 +307,6 @@
                 });
             }
             
-            // Soporte para menú hamburguesa en layout público
-            const menuBtn = document.getElementById('menu-btn');
-            const mainMenu = document.getElementById('main-menu');
-            
-            if (menuBtn && mainMenu) {
-                menuBtn.addEventListener('click', () => {
-                    mainMenu.classList.toggle('hidden');
-                    
-                    // Cambiar icono del botón hamburguesa si existe
-                    const openIcon = menuBtn.querySelector('.open-icon');
-                    const closeIcon = menuBtn.querySelector('.close-icon');
-                    
-                    if (openIcon && closeIcon) {
-                        openIcon.classList.toggle('hidden');
-                        closeIcon.classList.toggle('hidden');
-                    }
-                });
-            }
         });
     </script>
 </body>

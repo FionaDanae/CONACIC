@@ -32,70 +32,119 @@
                 <h2 class="text-2xl font-bold text-[#061d3f] mb-6">Programa General CONACIC 2025</h2>
                 <p class="text-gray-600 mb-6">A continuación se presenta el programa completo del congreso, incluyendo conferencias y talleres.</p>
                 
-                <!-- Programa de Conferencias -->
-                <div class="mb-8">
-                    <h3 class="text-xl font-bold text-[#061d3f] mb-4">Programa de Conferencias</h3>
-            
-            <!-- Timeline Container -->
-            <div class="space-y-8">
-                <!-- Lunes 6 de Octubre -->
-                <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-8 shadow-lg border-l-4 border-[#23b0d8]">
+                <div class="flex justify-center mb-8">
+                    <div class="inline-flex bg-gray-100 rounded-lg shadow-md overflow-hidden flex-wrap">
+                        <button id="subtab-lunes6" class="subtab-btn px-4 py-2 font-semibold text-gray-500 hover:text-[#061d3f] text-sm" onclick="openSubTab('lunes6')">Lunes 6</button>
+                        <button id="subtab-martes7" class="subtab-btn px-4 py-2 font-semibold text-gray-500 hover:text-[#061d3f] text-sm" onclick="openSubTab('martes7')">Martes 7</button>
+                        <button id="subtab-miercoles8" class="subtab-btn px-4 py-2 font-semibold text-gray-500 hover:text-[#061d3f] text-sm" onclick="openSubTab('miercoles8')">Miércoles 8</button>
+                        <button id="subtab-jueves9" class="subtab-btn px-4 py-2 font-semibold text-gray-500 hover:text-[#061d3f] text-sm" onclick="openSubTab('jueves9')">Jueves 9</button>
+                        <button id="subtab-viernes10" class="subtab-btn px-4 py-2 font-semibold text-gray-500 hover:text-[#061d3f] text-sm" onclick="openSubTab('viernes10')">Viernes 10</button>
+                    </div>
+                </div>
+
+                <!-- Contenido de sub-pestañas -->
+                <!-- Lunes 6 -->
+                <div id="subtab-content-lunes6" class="subtab-content">
+                <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-8 shadow-lg border-l-4 border-[#23b0d8]">
                     <div class="flex items-center justify-center mb-6">
                         <div class="bg-[#061d3f] text-white px-6 py-3 rounded-full font-bold text-lg shadow-md">
                             📅 Lunes 6 de Octubre
                         </div>
                     </div>
-                    <div class="max-w-6xl mx-auto space-y-6">
-                        <!-- Ponencias On Demand -->
-                        <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 border-l-4 border-[#FFC72C]">
+                    <div class="max-w-4xl mx-auto">
+                        <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300">
                             <div class="flex items-center justify-between mb-4">
-                                <span class="bg-[#FFC72C] text-[#061d3f] px-4 py-2 rounded-full font-bold text-sm">⏰ 10:00 - 13:00</span>
-                                <span class="bg-[#23b0d8] text-white px-3 py-1 rounded-full text-sm font-semibold"> Ponencias On Demand</span>
+                                <span class="bg-[#23b0d8] text-white px-4 py-2 rounded-full font-bold text-sm">⏰ 16:00 - 19:00</span>
+                                <span class="bg-[#FFC72C] text-[#061d3f] px-3 py-1 rounded-full text-sm font-semibold">Ponencias On Demand</span>
                             </div>
-                            <h4 class="font-bold text-[#061d3f] text-xl mb-3">Ponencias On Demand CONACIC 2025  </h4>
-                            <p class="text-gray-700 mb-4 leading-relaxed">¡Bienvenidos al Congreso Nacional de Ciencias de la Computación 2024! Continúa explorando las ponencias disponibles.</p>
+                            <h4 class="font-bold text-[#061d3f] text-xl mb-3">Ponencias On Demand CONACIC 2024</h4>
+                            <p class="text-gray-700 mb-4 leading-relaxed">¡Bienvenidos al Congreso Nacional de Ciencias de la Computación 2024! Accede a las ponencias disponibles bajo demanda.</p>
                             <div class="flex justify-center">
-                                <a href="https://dcytic2.webex.com/dcytic2/j.php?MTID=m0fa3cc4403c2e070199fbe2158c0823c" class="bg-gradient-to-r from-[#FFC72C] to-[#FFD700] text-[#061d3f] px-6 py-3 rounded-lg hover:shadow-lg transition-all duration-300 font-semibold flex items-center gap-2">
-                                    🎊 Ingresar a las Ponencias
+                                <a href="https://conacic.siycise.org/simultaneas/" class="bg-gradient-to-r from-[#23b0d8] to-[#1a8bb0] text-white px-6 py-3 rounded-lg hover:shadow-lg transition-all duration-300 font-semibold flex items-center gap-2">
+                                    🎥 Ingresar a las Ponencias
                                 </a>
                             </div>
                         </div>
-
-                        <!-- M.C. Saulo Abraham Gante Diaz -->
-                        <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 border-l-4 border-[#23b0d8]">
-                            <div class="flex items-center justify-between mb-4">
-                                <span class="bg-[#23b0d8] text-white px-4 py-2 rounded-full font-bold text-sm">⏰ 10:00 - 11:00</span>
-                                <span class="bg-[#FFC72C] text-[#061d3f] px-3 py-1 rounded-full text-sm font-semibold">🎓 Conferencia Magistral</span>
+                    </div>
+                </div>
+                
+                <div class="mb-8"></div>
+                
+                <!-- Talleres Simultáneos -->
+                        <div class="bg-gradient-to-r from-[#061d3f] to-[#23b0d8] p-6 rounded-lg">
+                            <div class="flex items-center justify-center mb-4">
+                                <span class="text-white font-bold text-xl bg-[#FFC72C] text-[#061d3f] px-6 py-2 rounded-full">16:00 - 19:00</span>
                             </div>
+                            <h3 class="text-white text-center text-2xl font-bold mb-6">TALLERES SIMULTÁNEOS</h3>
                             
-                            <div class="flex flex-col md:flex-row gap-6">
-                                <div class="flex items-center gap-4 md:w-1/3">
-                                    <img src="{{ asset('images/Dr.ErikRodnerRodner.jpg') }}" alt="M.C. Saulo Abraham Gante Diaz" class="w-20 h-20 rounded-full object-cover border-4 border-[#23b0d8] shadow-lg">
-                                    <div>
-                                        <h4 class="font-bold text-[#061d3f] text-lg">M.C. Saulo Abraham Gante Diaz</h4>
-                                        <p class="text-gray-600 text-sm">CIC-IPN, México</p>
-                                        <button onclick="document.getElementById('modal-saulo').classList.remove('hidden')" class="mt-2 bg-[#FFC72C] text-[#061d3f] px-3 py-1 rounded-lg hover:bg-[#FFD700] transition-colors text-sm font-semibold shadow-md">
-                                            👤 Ver perfil
-                                        </button>
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <!-- Sala 1 -->
+                                <div class="bg-white rounded-lg p-6 shadow-lg border-l-4 border-[#FFC72C]">
+                                    <div class="flex items-center justify-between mb-4">
+                                        <div class="bg-[#FFC72C] text-[#061d3f] px-4 py-2 rounded-full font-semibold text-sm">
+                                            SALA 1
+                                        </div>
+                                        <span class="text-sm bg-[#23b0d8] text-white px-3 py-1 rounded-full font-semibold">Señales EEG</span>
+                                    </div>
+                                    
+                                    <div class="flex items-center gap-4 mb-4">
+                                        <img src="{{ asset('images/M.C.BeatrizAlejadraFloresRojas.jpg') }}" alt="M.C. Griselda Cortés Barrera" class="w-16 h-16 rounded-full object-cover border-3 border-[#FFC72C] shadow-md">
+                                        <div>
+                                            <h4 class="font-bold text-[#061d3f] text-lg">M.C. Saulo Abraham Gante Díaz</h4>
+                                            <p class="text-gray-600 text-sm">CIC-IPN México</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mb-4">
+                                        <h5 class="font-bold text-[#061d3f] mb-2">Renconstrucción 3D</h5>
+                                        <p class="text-gray-700 text-sm leading-relaxed">Conocer herramientas de análisis descriptivo y predictivo es crucial para tomar decisiones informadas en diversos campos.</p>
+                                    </div>
+                                    
+                                    <div class="flex flex-col gap-2">
+                                        <a href="https://dcytic2.webex.com/dcytic2/j.php?MTID=m0fa3cc4403c2e070199fbe2158c0823c" class="bg-[#23b0d8] text-white px-4 py-2 rounded-lg hover:bg-[#1a8bb0] transition-colors text-center font-semibold shadow-md">
+                                            🎯 Registrarse al taller
+                                        </a>
                                     </div>
                                 </div>
                                 
-                                <div class="md:w-2/3">
-                                    <h5 class="font-bold text-[#061d3f] text-xl mb-3 border-b-2 border-[#23b0d8] pb-2">Reconstrucción 3D</h5>
-                                    <p class="text-gray-700 text-sm leading-relaxed mb-4">Machine learning has become an everyday technology we are surrounded with. Furthermore, the speed of innovation has increased dramatically, presenting a vast number of opportunities but also critical challenges. In my talk, I will give an overview of current advances, discuss the future ahead of us (at least a prediction for the next few weeks), and link some of the challenges to research done in my lab.</p>
-                                    <div class="flex justify-center">
-                                        <a href="https://dcytic2.webex.com/dcytic2/j.php?MTID=m0fa3cc4403c2e070199fbe2158c0823c" class="bg-gradient-to-r from-[#23b0d8] to-[#1a8bb0] text-white px-6 py-3 rounded-lg hover:shadow-lg transition-all duration-300 font-semibold flex items-center gap-2">
-                                            🎯 Ingresar a la Conferencia
+                                <!-- Sala 2 -->
+                                <div class="bg-white rounded-lg p-6 shadow-lg border-l-4 border-[#FFC72C]">
+                                    <div class="flex items-center justify-between mb-4">
+                                        <div class="bg-[#FFC72C] text-[#061d3f] px-4 py-2 rounded-full font-semibold text-sm">
+                                            SALA 2
+                                        </div>
+                                        <span class="text-sm bg-[#23b0d8] text-white px-3 py-1 rounded-full font-semibold">Señales EEG</span>
+                                    </div>
+                                    
+                                    <div class="flex items-center gap-4 mb-4">
+                                        <img src="{{ asset('images/M.C.BeatrizAlejadraFloresRojas.jpg') }}" alt="M.C. Griselda Cortés Barrera" class="w-16 h-16 rounded-full object-cover border-3 border-[#FFC72C] shadow-md">
+                                        <div>
+                                            <h4 class="font-bold text-[#061d3f] text-lg">M.C. Griselda Cortés Barrera</h4>
+                                            <h6 class="font-semibold text-[#061d3f] text-sm">M.C. Edgar Corona Organiche</h6>
+                                            <p class="text-gray-600 text-sm">Benemérita</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mb-4">
+                                        <h5 class="font-bold text-[#061d3f] mb-2">Adquisición y preprocesamiento de señales EEG</h5>
+                                        <p class="text-gray-700 text-sm leading-relaxed">Conocer herramientas de análisis descriptivo y predictivo es crucial para tomar decisiones informadas en diversos campos.</p>
+                                    </div>
+                                    
+                                    <div class="flex flex-col gap-2">
+                                        <a href="https://dcytic2.webex.com/dcytic2/j.php?MTID=m0fa3cc4403c2e070199fbe2158c0823c" class="bg-[#23b0d8] text-white px-4 py-2 rounded-lg hover:bg-[#1a8bb0] transition-colors text-center font-semibold shadow-md">
+                                            🎯 Registrarse al taller
                                         </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                 </div>
 
-                <!-- Martes 7 de Octubre -->
-                <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-8 shadow-lg border-l-4 border-[#FFC72C]">
+                <!-- Martes 7 -->
+                <div id="subtab-content-martes7" class="subtab-content hidden">
+                    <div class="space-y-6">
+                        <!-- Ponencias On Demand -->
+                        <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-8 shadow-lg border-l-4 border-[#23b0d8]">
                     <div class="flex items-center justify-center mb-6">
                         <div class="bg-[#061d3f] text-white px-6 py-3 rounded-full font-bold text-lg shadow-md">
                             📅 Martes 7 de Octubre
@@ -104,22 +153,96 @@
                     <div class="max-w-4xl mx-auto">
                         <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300">
                             <div class="flex items-center justify-between mb-4">
-                                <span class="bg-[#FFC72C] text-[#061d3f] px-4 py-2 rounded-full font-bold text-sm">⏰ 09:30 - 16:00</span>
-                                <span class="bg-[#23b0d8] text-white px-3 py-1 rounded-full text-sm font-semibold">Ponencias On Demand</span>
+                                <span class="bg-[#23b0d8] text-white px-4 py-2 rounded-full font-bold text-sm">⏰ 16:00 - 19:00</span>
+                                <span class="bg-[#FFC72C] text-[#061d3f] px-3 py-1 rounded-full text-sm font-semibold">Ponencias On Demand</span>
                             </div>
                             <h4 class="font-bold text-[#061d3f] text-xl mb-3">Ponencias On Demand CONACIC 2024</h4>
-                            <p class="text-gray-700 mb-4 leading-relaxed">¡Bienvenidos al Congreso Nacional de Ciencias de la Computación 2024! Continúa explorando las ponencias disponibles.</p>
+                            <p class="text-gray-700 mb-4 leading-relaxed">¡Bienvenidos al Congreso Nacional de Ciencias de la Computación 2024! Accede a las ponencias disponibles bajo demanda.</p>
                             <div class="flex justify-center">
-                                <a href="https://conacic.siycise.org/simultaneas/" class="bg-gradient-to-r from-[#FFC72C] to-[#FFD700] text-[#061d3f] px-6 py-3 rounded-lg hover:shadow-lg transition-all duration-300 font-semibold flex items-center gap-2">
+                                <a href="https://conacic.siycise.org/simultaneas/" class="bg-gradient-to-r from-[#23b0d8] to-[#1a8bb0] text-white px-6 py-3 rounded-lg hover:shadow-lg transition-all duration-300 font-semibold flex items-center gap-2">
                                     🎥 Ingresar a las Ponencias
                                 </a>
                             </div>
                         </div>
                     </div>
+                        </div>
+                        
+                        <div class="mb-8"></div>
+
+                        <!-- Talleres Simultáneos -->
+                        <div class="bg-gradient-to-r from-[#061d3f] to-[#23b0d8] p-6 rounded-lg">
+                            <div class="flex items-center justify-center mb-4">
+                                <span class="text-white font-bold text-xl bg-[#FFC72C] text-[#061d3f] px-6 py-2 rounded-full">16:00 - 19:00</span>
+                            </div>
+                            <h3 class="text-white text-center text-2xl font-bold mb-6">TALLERES SIMULTÁNEOS</h3>
+                            
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <!-- Sala 1 -->
+                                <div class="bg-white rounded-lg p-6 shadow-lg border-l-4 border-[#23b0d8]">
+                                    <div class="flex items-center justify-between mb-4">
+                                        <div class="bg-[#23b0d8] text-white px-4 py-2 rounded-full font-semibold text-sm">
+                                            SALA 1
+                                        </div>
+                                        <span class="text-sm bg-[#FFC72C] text-[#061d3f] px-3 py-1 rounded-full font-semibold">Project Manager</span>
+                                    </div>
+                                    
+                                    <div class="flex items-center gap-4 mb-4">
+                                        <img src="{{ asset('images/M.C.BeatrizAlejadraFloresRojas.jpg') }}" alt="Lic. José Soto Pérez" class="w-16 h-16 rounded-full object-cover border-3 border-[#061d3f] shadow-md">
+                                        <div>
+                                            <h4 class="font-bold text-[#061d3f] text-lg">Lic. José Soto Pérez</h4>
+                                            <p class="text-gray-600 text-sm">Benemérita</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mb-4">
+                                        <p class="text-gray-700 text-sm leading-relaxed">Conocer herramientas de análisis descriptivo y predictivo es crucial para tomar decisiones informadas en diversos campos.</p>
+                                    </div>
+                                    
+                                    <div class="flex flex-col gap-2">
+                                        <a href="https://dcytic2.webex.com/dcytic2/j.php?MTID=m0fa3cc4403c2e070199fbe2158c0823c" class="bg-[#23b0d8] text-white px-4 py-2 rounded-lg hover:bg-[#1a8bb0] transition-colors text-center font-semibold shadow-md">
+                                            🎯 Registrarse al taller
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <!-- Sala 2 -->
+                                <div class="bg-white rounded-lg p-6 shadow-lg border-l-4 border-[#FFC72C]">
+                                    <div class="flex items-center justify-between mb-4">
+                                        <div class="bg-[#FFC72C] text-[#061d3f] px-4 py-2 rounded-full font-semibold text-sm">
+                                            SALA 2
+                                        </div>
+                                        <span class="text-sm bg-[#23b0d8] text-white px-3 py-1 rounded-full font-semibold">Señales EEG</span>
+                                    </div>
+                                    
+                                    <div class="flex items-center gap-4 mb-4">
+                                        <img src="{{ asset('images/M.C.BeatrizAlejadraFloresRojas.jpg') }}" alt="M.C. Griselda Cortés Barrera" class="w-16 h-16 rounded-full object-cover border-3 border-[#FFC72C] shadow-md">
+                                        <div>
+                                            <h4 class="font-bold text-[#061d3f] text-lg">M.C. Griselda Cortés Barrera</h4>
+                                            <h6 class="font-semibold text-[#061d3f] text-sm">M.C. Edgar Corona Organiche</h6>
+                                            <p class="text-gray-600 text-sm">Benemérita</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mb-4">
+                                        <h5 class="font-bold text-[#061d3f] mb-2">Adquisición y preprocesamiento de señales EEG</h5>
+                                        <p class="text-gray-700 text-sm leading-relaxed">Conocer herramientas de análisis descriptivo y predictivo es crucial para tomar decisiones informadas en diversos campos.</p>
+                                    </div>
+                                    
+                                    <div class="flex flex-col gap-2">
+                                        <a href="https://dcytic2.webex.com/dcytic2/j.php?MTID=m0fa3cc4403c2e070199fbe2158c0823c" class="bg-[#23b0d8] text-white px-4 py-2 rounded-lg hover:bg-[#1a8bb0] transition-colors text-center font-semibold shadow-md">
+                                            🎯 Registrarse al taller
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Miércoles 8 de Octubre -->
-                <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-8 shadow-lg border-l-4 border-[#23b0d8]">
+                <!-- Miércoles 8 -->
+                <div id="subtab-content-miercoles8" class="subtab-content hidden">
+                    <div class="space-y-6">
+                    <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-8 shadow-lg border-l-4 border-[#23b0d8]">
                     <div class="flex items-center justify-center mb-6">
                         <div class="bg-[#061d3f] text-white px-6 py-3 rounded-full font-bold text-lg shadow-md">
                             📅 Miércoles 8 de Octubre
@@ -171,11 +294,85 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="mb-8"></div>
+
+                        <!-- Talleres Simultáneos -->
+                        <div class="bg-gradient-to-r from-[#061d3f] to-[#23b0d8] p-6 rounded-lg">
+                            <div class="flex items-center justify-center mb-4">
+                                <span class="text-white font-bold text-xl bg-[#FFC72C] text-[#061d3f] px-6 py-2 rounded-full">16:00 - 19:00</span>
+                            </div>
+                            <h3 class="text-white text-center text-2xl font-bold mb-6">TALLERES SIMULTÁNEOS</h3>
+                            
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <!-- Sala 1 -->
+                                <div class="bg-white rounded-lg p-6 shadow-lg border-l-4 border-[#23b0d8]">
+                                    <div class="flex items-center justify-between mb-4">
+                                        <div class="bg-[#23b0d8] text-white px-4 py-2 rounded-full font-semibold text-sm">
+                                            SALA 1
+                                        </div>
+                                        <span class="text-sm bg-[#FFC72C] text-[#061d3f] px-3 py-1 rounded-full font-semibold">Project Manager</span>
+                                    </div>
+                                    
+                                    <div class="flex items-center gap-4 mb-4">
+                                        <img src="{{ asset('images/M.C.BeatrizAlejadraFloresRojas.jpg') }}" alt="Lic. José Soto Pérez" class="w-16 h-16 rounded-full object-cover border-3 border-[#061d3f] shadow-md">
+                                        <div>
+                                            <h4 class="font-bold text-[#061d3f] text-lg">Lic. José Soto Pérez</h4>
+                                            <p class="text-gray-600 text-sm">Benemérita</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mb-4">
+                                        <p class="text-gray-700 text-sm leading-relaxed">Conocer herramientas de análisis descriptivo y predictivo es crucial para tomar decisiones informadas en diversos campos.</p>
+                                    </div>
+                                    
+                                    <div class="flex flex-col gap-2">
+                                        <a href="https://dcytic2.webex.com/dcytic2/j.php?MTID=m0fa3cc4403c2e070199fbe2158c0823c" class="bg-[#23b0d8] text-white px-4 py-2 rounded-lg hover:bg-[#1a8bb0] transition-colors text-center font-semibold shadow-md">
+                                            🎯 Registrarse al taller
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <!-- Sala 2 -->
+                                <div class="bg-white rounded-lg p-6 shadow-lg border-l-4 border-[#FFC72C]">
+                                    <div class="flex items-center justify-between mb-4">
+                                        <div class="bg-[#FFC72C] text-[#061d3f] px-4 py-2 rounded-full font-semibold text-sm">
+                                            SALA 2
+                                        </div>
+                                        <span class="text-sm bg-[#23b0d8] text-white px-3 py-1 rounded-full font-semibold">Señales EEG</span>
+                                    </div>
+                                    
+                                    <div class="flex items-center gap-4 mb-4">
+                                        <img src="{{ asset('images/M.C.BeatrizAlejadraFloresRojas.jpg') }}" alt="M.C. Griselda Cortés Barrera" class="w-16 h-16 rounded-full object-cover border-3 border-[#FFC72C] shadow-md">
+                                        <div>
+                                            <h4 class="font-bold text-[#061d3f] text-lg">M.C. Griselda Cortés Barrera</h4>
+                                            <h6 class="font-semibold text-[#061d3f] text-sm">M.C. Edgar Corona Organiche</h6>
+                                            <p class="text-gray-600 text-sm">Benemérita</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mb-4">
+                                        <h5 class="font-bold text-[#061d3f] mb-2">Adquisición y preprocesamiento de señales EEG</h5>
+                                        <p class="text-gray-700 text-sm leading-relaxed">Conocer herramientas de análisis descriptivo y predictivo es crucial para tomar decisiones informadas en diversos campos.</p>
+                                    </div>
+                                    
+                                    <div class="flex flex-col gap-2">
+                                        <a href="https://dcytic2.webex.com/dcytic2/j.php?MTID=m0fa3cc4403c2e070199fbe2158c0823c" class="bg-[#23b0d8] text-white px-4 py-2 rounded-lg hover:bg-[#1a8bb0] transition-colors text-center font-semibold shadow-md">
+                                            🎯 Registrarse al taller
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
                     </div>
                 </div>
 
-                <!-- Jueves 9 de Octubre -->
-                <div class="bg-gradient-to-br from-orange-50 to-red-50 rounded-xl p-8 shadow-lg border-l-4 border-[#FFC72C]">
+                <!-- Jueves 9 -->
+                <div id="subtab-content-jueves9" class="subtab-content hidden">
+                    <div class="space-y-6">
+                    <div class="bg-gradient-to-br from-orange-50 to-red-50 rounded-xl p-8 shadow-lg border-l-4 border-[#FFC72C]">
                     <div class="flex items-center justify-center mb-6">
                         <div class="bg-[#061d3f] text-white px-6 py-3 rounded-full font-bold text-lg shadow-md">
                             📅 Jueves 9 de Octubre
@@ -212,39 +409,115 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="mb-8"></div>
+                        
+                        <!-- Talleres Simultáneos -->
+                        <div class="bg-gradient-to-r from-[#061d3f] to-[#23b0d8] p-6 rounded-lg">
+                            <div class="flex items-center justify-center mb-4">
+                                <span class="text-white font-bold text-xl bg-[#FFC72C] text-[#061d3f] px-6 py-2 rounded-full">16:00 - 19:00</span>
+                            </div>
+                            <h3 class="text-white text-center text-2xl font-bold mb-6">TALLERES SIMULTÁNEOS</h3>
+                            
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <!-- Sala 1 -->
+                                <div class="bg-white rounded-lg p-6 shadow-lg border-l-4 border-[#23b0d8]">
+                                    <div class="flex items-center justify-between mb-4">
+                                        <div class="bg-[#23b0d8] text-white px-4 py-2 rounded-full font-semibold text-sm">
+                                            SALA 1
+                                        </div>
+                                        <span class="text-sm bg-[#FFC72C] text-[#061d3f] px-3 py-1 rounded-full font-semibold">Project Manager</span>
+                                    </div>
+                                    
+                                    <div class="flex items-center gap-4 mb-4">
+                                        <img src="{{ asset('images/M.C.BeatrizAlejadraFloresRojas.jpg') }}" alt="Lic. José Soto Pérez" class="w-16 h-16 rounded-full object-cover border-3 border-[#061d3f] shadow-md">
+                                        <div>
+                                            <h4 class="font-bold text-[#061d3f] text-lg">Lic. José Soto Pérez</h4>
+                                            <p class="text-gray-600 text-sm">Benemérita</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mb-4">
+                                        <p class="text-gray-700 text-sm leading-relaxed">Conocer herramientas de análisis descriptivo y predictivo es crucial para tomar decisiones informadas en diversos campos.</p>
+                                    </div>
+                                    
+                                    <div class="flex flex-col gap-2">
+                                        <a href="https://dcytic2.webex.com/dcytic2/j.php?MTID=m0fa3cc4403c2e070199fbe2158c0823c" class="bg-[#23b0d8] text-white px-4 py-2 rounded-lg hover:bg-[#1a8bb0] transition-colors text-center font-semibold shadow-md">
+                                            🎯 Registrarse al taller
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <!-- Sala 2 -->
+                                <div class="bg-white rounded-lg p-6 shadow-lg border-l-4 border-[#FFC72C]">
+                                    <div class="flex items-center justify-between mb-4">
+                                        <div class="bg-[#FFC72C] text-[#061d3f] px-4 py-2 rounded-full font-semibold text-sm">
+                                            SALA 2
+                                        </div>
+                                        <span class="text-sm bg-[#23b0d8] text-white px-3 py-1 rounded-full font-semibold">Señales EEG</span>
+                                    </div>
+                                    
+                                    <div class="flex items-center gap-4 mb-4">
+                                        <img src="{{ asset('images/M.C.BeatrizAlejadraFloresRojas.jpg') }}" alt="M.C. Griselda Cortés Barrera" class="w-16 h-16 rounded-full object-cover border-3 border-[#FFC72C] shadow-md">
+                                        <div>
+                                            <h4 class="font-bold text-[#061d3f] text-lg">M.C. Griselda Cortés Barrera</h4>
+                                            <h6 class="font-semibold text-[#061d3f] text-sm">M.C. Edgar Corona Organiche</h6>
+                                            <p class="text-gray-600 text-sm">Benemérita</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mb-4">
+                                        <h5 class="font-bold text-[#061d3f] mb-2">Adquisición y preprocesamiento de señales EEG</h5>
+                                        <p class="text-gray-700 text-sm leading-relaxed">Conocer herramientas de análisis descriptivo y predictivo es crucial para tomar decisiones informadas en diversos campos.</p>
+                                    </div>
+                                    
+                                    <div class="flex flex-col gap-2">
+                                        <a href="https://dcytic2.webex.com/dcytic2/j.php?MTID=m0fa3cc4403c2e070199fbe2158c0823c" class="bg-[#23b0d8] text-white px-4 py-2 rounded-lg hover:bg-[#1a8bb0] transition-colors text-center font-semibold shadow-md">
+                                            🎯 Registrarse al taller
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
                 </div>
 
-                <!-- Viernes 10 de Octubre -->
-                <div class="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-xl p-8 shadow-lg border-l-4 border-[#23b0d8]">
+                
+                </div>
+
+                <!-- Viernes 10 -->
+                <div id="subtab-content-viernes10" class="subtab-content hidden">
+                    <div class="space-y-6">
+                    <div class="bg-gradient-to-br from-orange-50 to-red-50 rounded-xl p-8 shadow-lg border-l-4 border-[#FFC72C]">
                     <div class="flex items-center justify-center mb-6">
                         <div class="bg-[#061d3f] text-white px-6 py-3 rounded-full font-bold text-lg shadow-md">
                             📅 Viernes 10 de Octubre
                         </div>
                     </div>
                     <div class="max-w-6xl mx-auto">
-                        <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 border-l-4 border-[#23b0d8]">
+                        <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 border-l-4 border-[#FFC72C]">
                             <div class="flex items-center justify-between mb-4">
-                                <span class="bg-[#23b0d8] text-white px-4 py-2 rounded-full font-bold text-sm">⏰ 10:00 - 11:00</span>
-                                <span class="bg-[#FFC72C] text-[#061d3f] px-3 py-1 rounded-full text-sm font-semibold">🧠 Neuronas Morfológicas</span>
+                                <span class="bg-[#FFC72C] text-[#061d3f] px-4 py-2 rounded-full font-bold text-sm">⏰ 10:00 - 11:00</span>
+                                <span class="bg-[#23b0d8] text-white px-3 py-1 rounded-full text-sm font-semibold">🤖 Inteligencia Artificial</span>
                             </div>
                             
                             <div class="flex flex-col md:flex-row gap-6">
                                 <div class="flex items-center gap-4 md:w-1/3">
-                                    <img src="{{ asset('images/Dr.WilfridoGomezFlores.jpg') }}" alt="Dr. Wilfrido Gómez Flores" class="w-20 h-20 rounded-full object-cover border-4 border-[#23b0d8] shadow-lg">
+                                    <img src="{{ asset('images/Dr.AdolfoGuzmanArenas.jpg') }}" alt="Dr. Adolfo Guzmán Arenas" class="w-20 h-20 rounded-full object-cover border-4 border-[#FFC72C] shadow-lg">
                                     <div>
-                                        <h4 class="font-bold text-[#061d3f] text-lg">Dr. Wilfrido Gómez Flores</h4>
-                                        <p class="text-gray-600 text-sm">CINVESTAV, IPN</p>
-                                        <button onclick="document.getElementById('modal-wilfrido').classList.remove('hidden')" class="mt-2 bg-[#FFC72C] text-[#061d3f] px-3 py-1 rounded-lg hover:bg-[#FFD700] transition-colors text-sm font-semibold shadow-md">
+                                        <h4 class="font-bold text-[#061d3f] text-lg">Dr. Adolfo Guzmán Arenas</h4>
+                                        <p class="text-gray-600 text-sm">Centro de Investigación en Computación, IPN</p>
+                                        <button onclick="document.getElementById('modal-adolfo').classList.remove('hidden')" class="mt-2 bg-[#23b0d8] text-white px-3 py-1 rounded-lg hover:bg-[#1a8bb0] transition-colors text-sm font-semibold shadow-md">
                                             👤 Ver perfil
                                         </button>
                                     </div>
                                 </div>
                                 
                                 <div class="md:w-2/3">
-                                    <h5 class="font-bold text-[#061d3f] text-xl mb-3 border-b-2 border-[#23b0d8] pb-2">Una Introducción a las Neuronas Morfológicas Dendríticas</h5>
-                                    <p class="text-gray-700 text-sm leading-relaxed mb-4">Las neuronas morfológicas dendríticas (DMN) son modelos neuronales artificiales que acoplan dos elementos: neuronas morfológicas, cuyo cómputo se basa en los operadores máximo y mínimo, y estructuras dendríticas, que son unidades computacionales autónomas primarias activadas localmente. Un único DMN puede resolver problemas de clasificación no linealmente separables, como la compuerta XOR...</p>
+                                    <h5 class="font-bold text-[#061d3f] text-xl mb-3 border-b-2 border-[#FFC72C] pb-2">Los Nuevos Chatbots de la IA, sus Riesgos y la Legislación para Atenderlos</h5>
+                                    <p class="text-gray-700 text-sm leading-relaxed mb-4">Los avances recientes de la IA generativa son impresionantes, por ejemplo, ChatGPT. Se utilizan grandes modelos del lenguaje que han sido preentrenados con enormes cantidades de texto para expresarse con naturalidad y sentido común, en español u otros idiomas, respondiendo preguntas habladas o escritas, con gran imaginación y vasto conocimiento...</p>
                                     <div class="flex justify-center">
-                                        <a href="https://dcytic2.webex.com/dcytic2/j.php?MTID=m0fa3cc4403c2e070199fbe2158c0823c" class="bg-gradient-to-r from-[#23b0d8] to-[#1a8bb0] text-white px-6 py-3 rounded-lg hover:shadow-lg transition-all duration-300 font-semibold flex items-center gap-2">
+                                        <a href="https://dcytic2.webex.com/dcytic2/j.php?MTID=m0fa3cc4403c2e070199fbe2158c0823c" class="bg-gradient-to-r from-[#FFC72C] to-[#FFD700] text-[#061d3f] px-6 py-3 rounded-lg hover:shadow-lg transition-all duration-300 font-semibold flex items-center gap-2">
                                             🎯 Ingresar a la Conferencia
                                         </a>
                                     </div>
@@ -253,196 +526,77 @@
                         </div>
                     </div>
                 </div>
-
-                <h3 class="text-xl font-bold text-[#061d3f] mb-4">Programa de Talleres</h3>
-                 <!-- Martes 7 de Octubre -->
-                <div class="bg-gray-50 rounded-lg p-6">
-                    <h3 class="text-xl font-bold text-[#061d3f] mb-4">Martes 7 de Octubre</h3>
-                    <div class="space-y-4">
-                        <div class="flex items-start">
+                <div class="mb-8"></div>
+                        
+                        <!-- Talleres Simultáneos -->
+                        <div class="bg-gradient-to-r from-[#061d3f] to-[#23b0d8] p-6 rounded-lg">
+                            <div class="flex items-center justify-center mb-4">
+                                <span class="text-white font-bold text-xl bg-[#FFC72C] text-[#061d3f] px-6 py-2 rounded-full">16:00 - 19:00</span>
+                            </div>
+                            <h3 class="text-white text-center text-2xl font-bold mb-6">TALLERES SIMULTÁNEOS</h3>
                             
-                            <!-- Salas Simultáneas -->
-                            <div class="bg-gradient-to-r from-[#061d3f] to-[#23b0d8] p-6 rounded-lg mb-6">
-                                <div class="flex items-center justify-center mb-4">
-                                    <span class="text-white font-bold text-xl bg-[#FFC72C] text-[#061d3f] px-6 py-2 rounded-full">16:00 - 19:00</span>
-                                </div>
-                                <h3 class="text-white text-center text-2xl font-bold mb-6">TALLERES SIMULTÁNEOS</h3>
-                                
-                                <div class="grid md:grid-cols-2 gap-6">
-                                    <!-- Sala 1 -->
-                                    <div class="bg-white rounded-lg p-6 shadow-lg border-l-4 border-[#23b0d8]">
-                                        <div class="flex items-center justify-between mb-4">
-                                            <div class="bg-[#23b0d8] text-white px-4 py-2 rounded-full font-semibold text-sm">
-                                                SALA 1
-                                            </div>
-                                            <button onclick="document.getElementById('modal-beatriz').classList.remove('hidden')" class="text-sm bg-[#FFC72C] text-[#061d3f] px-3 py-1 rounded hover:bg-[#FFD700] transition-colors">
-                                                Ver perfil
-                                            </button>
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <!-- Sala 1 -->
+                                <div class="bg-white rounded-lg p-6 shadow-lg border-l-4 border-[#23b0d8]">
+                                    <div class="flex items-center justify-between mb-4">
+                                        <div class="bg-[#23b0d8] text-white px-4 py-2 rounded-full font-semibold text-sm">
+                                            SALA 1
                                         </div>
-                                        
-                                        <div class="flex items-center gap-4 mb-4">
-                                            <img src="{{ asset('images/M.C.BeatrizAlejadraFloresRojas.jpg') }}" alt="Lic. José Soto Pérez" class="w-16 h-16 rounded-full object-cover border-3 border-[#061d3f] shadow-md">
-                                            <div>
-                                                <h4 class="font-bold text-[#061d3f] text-lg">Lic. José Soto Pérez</h4>
-                                                <p class="text-gray-600 text-sm">Benemérita</p>
-                                            </div>
-                                        </div>
-                                        
-                                        <h5 class="font-bold text-[#061d3f] text-xl mb-3 border-b-2 border-[#23b0d8] pb-2">Project Manager</h5>
-                                        <p class="text-gray-700 text-sm text-justify leading-relaxed mb-4">Conocer herramientas de análisis descriptivo y predictivo es crucial para tomar decisiones informadas en diversos campos. El análisis descriptivo permite entender el estado actual de los datos, identificando patrones, relaciones y tendencias a partir de información histórica. Esto es fundamental para evaluar situaciones, detectar problemas o áreas de oportunidad, y comunicar hallazgos de manera clara. Por su parte, el análisis predictivo permite anticipar futuros escenarios, proyectando comportamientos y posibles resultados con base en datos pasados.</p>
-                                        
-                                        <div class="bg-gray-50 p-3 rounded-lg mb-4">
-                                            <p class="text-gray-700 text-sm font-semibold">📋 Material:</p>
-                                            <p class="text-gray-600 text-sm">Equipo de cómputo, Power BI Desktop de Microsoft, Orange y Jupyter (de Anaconda).</p>
-                                        </div>
-                                        
-                                        <div class="flex flex-col sm:flex-row gap-3">
-                                            <a href="https://dcytic2.webex.com/dcytic2/j.php?MTID=m0fa3cc4403c2e070199fbe2158c0823c" class="flex-1 text-center bg-[#23b0d8] text-white px-4 py-2 rounded-lg hover:bg-[#1a8bb0] transition-colors font-semibold">
-                                                🎯 Registrarse
-                                            </a>
-                                            <a href="https://drive.google.com/drive/folders/103LCuwSetgkcREMLy6b_z3_EyB_IXWq_?usp=sharing" class="flex-1 text-center bg-[#FFC72C] text-[#061d3f] px-4 py-2 rounded-lg hover:bg-[#FFD700] transition-colors font-semibold">
-                                                📁 Materiales
-                                            </a>
+                                        <span class="text-sm bg-[#FFC72C] text-[#061d3f] px-3 py-1 rounded-full font-semibold">Project Manager</span>
+                                    </div>
+                                    
+                                    <div class="flex items-center gap-4 mb-4">
+                                        <img src="{{ asset('images/M.C.BeatrizAlejadraFloresRojas.jpg') }}" alt="Lic. José Soto Pérez" class="w-16 h-16 rounded-full object-cover border-3 border-[#061d3f] shadow-md">
+                                        <div>
+                                            <h4 class="font-bold text-[#061d3f] text-lg">Lic. José Soto Pérez</h4>
+                                            <p class="text-gray-600 text-sm">Benemérita</p>
                                         </div>
                                     </div>
                                     
-                                    <!-- Sala 2 -->
-                                    <div class="bg-white rounded-lg p-6 shadow-lg border-l-4 border-[#FFC72C]">
-                                        <div class="flex items-center justify-between mb-4">
-                                            <div class="bg-[#FFC72C] text-[#061d3f] px-4 py-2 rounded-full font-semibold text-sm">
-                                                SALA 2
-                                            </div>
-                                            <button onclick="document.getElementById('modal-beatriz').classList.remove('hidden')" class="text-sm bg-[#23b0d8] text-white px-3 py-1 rounded hover:bg-[#1a8bb0] transition-colors">
-                                                Ver perfil
-                                            </button>
+                                    <div class="mb-4">
+                                        <p class="text-gray-700 text-sm leading-relaxed">Conocer herramientas de análisis descriptivo y predictivo es crucial para tomar decisiones informadas en diversos campos.</p>
+                                    </div>
+                                    
+                                    <div class="flex flex-col gap-2">
+                                        <a href="https://dcytic2.webex.com/dcytic2/j.php?MTID=m0fa3cc4403c2e070199fbe2158c0823c" class="bg-[#23b0d8] text-white px-4 py-2 rounded-lg hover:bg-[#1a8bb0] transition-colors text-center font-semibold shadow-md">
+                                            🎯 Registrarse al taller
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <!-- Sala 2 -->
+                                <div class="bg-white rounded-lg p-6 shadow-lg border-l-4 border-[#FFC72C]">
+                                    <div class="flex items-center justify-between mb-4">
+                                        <div class="bg-[#FFC72C] text-[#061d3f] px-4 py-2 rounded-full font-semibold text-sm">
+                                            SALA 2
                                         </div>
-                                        
-                                        <div class="flex items-center gap-4 mb-4">
-                                            <img src="{{ asset('images/M.C.BeatrizAlejadraFloresRojas.jpg') }}" alt="M.C. Griselda Cortés Barrera y M.C. Edgar Corona Organiche" class="w-16 h-16 rounded-full object-cover border-3 border-[#061d3f] shadow-md">
-                                            <div>
-                                                <h4 class="font-bold text-[#061d3f] text-lg">M.C. Griselda Cortés Barrera</h4>
-                                                <h4 class="font-bold text-[#061d3f] text-lg">M.C. Edgar Corona Organiche</h4>
-                                                <p class="text-gray-600 text-sm">Benemérita</p>
-                                            </div>
+                                        <span class="text-sm bg-[#23b0d8] text-white px-3 py-1 rounded-full font-semibold">Señales EEG</span>
+                                    </div>
+                                    
+                                    <div class="flex items-center gap-4 mb-4">
+                                        <img src="{{ asset('images/M.C.BeatrizAlejadraFloresRojas.jpg') }}" alt="M.C. Griselda Cortés Barrera" class="w-16 h-16 rounded-full object-cover border-3 border-[#FFC72C] shadow-md">
+                                        <div>
+                                            <h4 class="font-bold text-[#061d3f] text-lg">M.C. Griselda Cortés Barrera</h4>
+                                            <h6 class="font-semibold text-[#061d3f] text-sm">M.C. Edgar Corona Organiche</h6>
+                                            <p class="text-gray-600 text-sm">Benemérita</p>
                                         </div>
-                                        
-                                        <h5 class="font-bold text-[#061d3f] text-xl mb-3 border-b-2 border-[#FFC72C] pb-2">Adquisición y preprocesamiento de señales EEG</h5>
-                                        <p class="text-gray-700 text-sm text-justify leading-relaxed mb-4">Conocer herramientas de análisis descriptivo y predictivo es crucial para tomar decisiones informadas en diversos campos. El análisis descriptivo permite entender el estado actual de los datos, identificando patrones, relaciones y tendencias a partir de información histórica. Esto es fundamental para evaluar situaciones, detectar problemas o áreas de oportunidad, y comunicar hallazgos de manera clara. Por su parte, el análisis predictivo permite anticipar futuros escenarios, proyectando comportamientos y posibles resultados con base en datos pasados.</p>
-                                        
-                                        <div class="bg-gray-50 p-3 rounded-lg mb-4">
-                                            <p class="text-gray-700 text-sm font-semibold">📋 Material:</p>
-                                            <p class="text-gray-600 text-sm">Equipo de cómputo, Power BI Desktop de Microsoft, Orange y Jupyter (de Anaconda).</p>
-                                        </div>
-                                        
-                                        <div class="flex flex-col sm:flex-row gap-3">
-                                            <a href="https://dcytic2.webex.com/dcytic2/j.php?MTID=m0fa3cc4403c2e070199fbe2158c0823c" class="flex-1 text-center bg-[#23b0d8] text-white px-4 py-2 rounded-lg hover:bg-[#1a8bb0] transition-colors font-semibold">
-                                                🎯 Registrarse
-                                            </a>
-                                            <a href="https://drive.google.com/drive/folders/103LCuwSetgkcREMLy6b_z3_EyB_IXWq_?usp=sharing" class="flex-1 text-center bg-[#FFC72C] text-[#061d3f] px-4 py-2 rounded-lg hover:bg-[#FFD700] transition-colors font-semibold">
-                                                📁 Materiales
-                                            </a>
-                                        </div>
+                                    </div>
+                                    
+                                    <div class="mb-4">
+                                        <h5 class="font-bold text-[#061d3f] mb-2">Adquisición y preprocesamiento de señales EEG</h5>
+                                        <p class="text-gray-700 text-sm leading-relaxed">Conocer herramientas de análisis descriptivo y predictivo es crucial para tomar decisiones informadas en diversos campos.</p>
+                                    </div>
+                                    
+                                    <div class="flex flex-col gap-2">
+                                        <a href="https://dcytic2.webex.com/dcytic2/j.php?MTID=m0fa3cc4403c2e070199fbe2158c0823c" class="bg-[#23b0d8] text-white px-4 py-2 rounded-lg hover:bg-[#1a8bb0] transition-colors text-center font-semibold shadow-md">
+                                            🎯 Registrarse al taller
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                 </div>
-
-                <!-- Miércoles 8 de Octubre -->
-                <div class="bg-gradient-to-br from-gray-50 to-green-50 rounded-lg p-6 shadow-lg">
-                    <h3 class="text-xl font-bold text-[#061d3f] mb-6 text-center">Miércoles 8 de Octubre - Taller</h3>
-                    <div class="text-center mb-6">
-                        <span class="text-[#23b0d8] font-bold text-lg bg-white px-4 py-2 rounded-full shadow-md">16:00 - 19:00</span>
-                    </div>
-                    
-                    <!-- Taller único -->
-                    <div class="max-w-4xl mx-auto">
-                        <div class="bg-white rounded-xl p-6 shadow-lg border-l-4 border-[#23b0d8] hover:shadow-xl transition-all duration-300">
-                            <div class="flex items-center justify-between mb-4">
-                                <h4 class="text-lg font-bold text-[#061d3f] bg-[#23b0d8] text-white px-3 py-1 rounded-lg">TALLER PRINCIPAL</h4>
-                                <span class="text-sm bg-[#FFC72C] text-[#061d3f] px-3 py-1 rounded-full font-semibold">Ciberseguridad</span>
-                            </div>
-                            
-                            <div class="flex items-center gap-4 mb-4">
-                                <img src="{{ asset('images/Dra. AnaLuisaBallinasHernández.jpeg') }}" alt="Ing. Sebástian Méndez Méndez" class="w-16 h-16 rounded-full object-cover border-3 border-[#23b0d8] shadow-md">
-                                <div class="flex-1">
-                                    <h5 class="font-bold text-[#061d3f]">Ing. Sebástian Méndez Méndez</h5>
-                                    <p class="text-sm text-gray-600">Benemérita Universidad Autónoma de Puebla</p>
-                                </div>
-                                <button onclick="document.getElementById('modal-ana').classList.remove('hidden')" class="bg-[#FFC72C] text-[#061d3f] px-3 py-1 rounded-lg hover:bg-[#FFD700] transition-colors text-sm font-semibold shadow-md">
-                                    👤 Ver perfil
-                                </button>
-                            </div>
-                            
-                            <div class="mb-4">
-                                <h5 class="font-bold text-[#061d3f] mb-2">Análisis avanzado de eventos de ciberseguridad</h5>
-                                <p class="text-gray-700 text-sm leading-relaxed">En este taller conocerás los conceptos básicos de realidad aumentada y aprenderás a construir aplicaciones móviles que incluyan la tecnología de realidad aumentada para superponer elementos virtuales con el mundo real. Las aplicaciones generadas se podrán instalar en dispositivos con sistema operativo Android.</p>
-                            </div>
-                            
-                            <div class="mb-4 p-3 bg-gray-50 rounded-lg">
-                                <p class="text-sm text-gray-600"><strong>Material:</strong> Laptop, Unity Hub, Editor de Unity 2022.3.17f1 LTS, Vuforia Engine 10.25, Dispositivo Android, Cable USB para el dispositivo Android.</p>
-                            </div>
-                            
-                            <div class="flex flex-col sm:flex-row gap-2">
-                                <a href="#" class="bg-[#23b0d8] text-white px-4 py-2 rounded-lg hover:bg-[#1a8bb0] transition-colors text-center font-semibold shadow-md flex-1">
-                                    🎯 Registrarse al taller
-                                </a>
-                                <a href="#" class="bg-[#061d3f] text-white px-4 py-2 rounded-lg hover:bg-[#0a2654] transition-colors text-center font-semibold shadow-md flex-1">
-                                    📖 Manual de Materiales
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Jueves 9 de Octubre -->
-                <div class="bg-gradient-to-br from-gray-50 to-purple-50 rounded-lg p-6 shadow-lg">
-                    <h3 class="text-xl font-bold text-[#061d3f] mb-6 text-center">Jueves 9 de Octubre - Taller</h3>
-                    <div class="text-center mb-6">
-                        <span class="text-[#23b0d8] font-bold text-lg bg-white px-4 py-2 rounded-full shadow-md">16:00 - 19:00</span>
-                    </div>
-                    
-                    <!-- Taller único -->
-                    <div class="max-w-4xl mx-auto">
-                        <div class="bg-white rounded-xl p-6 shadow-lg border-l-4 border-[#23b0d8] hover:shadow-xl transition-all duration-300">
-                            <div class="flex items-center justify-between mb-4">
-                                <h4 class="text-lg font-bold text-[#061d3f] bg-[#23b0d8] text-white px-3 py-1 rounded-lg">TALLER PRINCIPAL</h4>
-                                <span class="text-sm bg-[#FFC72C] text-[#061d3f] px-3 py-1 rounded-full font-semibold">Redes Neuronales</span>
-                            </div>
-                            
-                            <div class="flex items-center gap-4 mb-4">
-                                <img src="{{ asset('images/Lic.EduardoOcelotlValencia.jpg') }}" alt="M.C. Jonathan Axel Cruz Vázquez" class="w-16 h-16 rounded-full object-cover border-3 border-[#23b0d8] shadow-md">
-                                <div class="flex-1">
-                                    <h5 class="font-bold text-[#061d3f]">M.C. Jonathan Axel Cruz Vázquez</h5>
-                                    <p class="text-sm text-gray-600">CIC-Instituto Politécnico Nacional</p>
-                                </div>
-                                <button onclick="document.getElementById('modal-eduardo').classList.remove('hidden')" class="bg-[#FFC72C] text-[#061d3f] px-3 py-1 rounded-lg hover:bg-[#FFD700] transition-colors text-sm font-semibold shadow-md">
-                                    👤 Ver perfil
-                                </button>
-                            </div>
-                            
-                            <div class="mb-4">
-                                <h5 class="font-bold text-[#061d3f] mb-2">Redes Neuronales Artificiales: Conceptos, Relevancia y Aplicaciones</h5>
-                                <p class="text-gray-700 text-sm leading-relaxed">Las redes neuronales artificiales se han convertido en una herramienta muy útil en los últimos años para resolver problemas de toda índole. Los avances en esta materia se han dado, por un lado, por la mejor comprensión que se tiene de su operación y, por otro lado, por la consolidación en el desarrollo de procesadores que permiten que los algoritmos de aprendizaje asociados se hayan desarrollado.</p>
-                            </div>
-                            
-                            <div class="mb-4 p-3 bg-gray-50 rounded-lg">
-                                <p class="text-sm text-gray-600"><strong>Contenido:</strong> Conceptos relacionados con las redes neuronales artificiales como modelos operativos de los cerebros biológicos. Aplicación de las redes neuronales a la generación de modelos matemáticos a partir de datos.</p>
-                            </div>
-                            
-                            <div class="flex justify-center">
-                                <a href="#" class="bg-[#23b0d8] text-white px-6 py-2 rounded-lg hover:bg-[#1a8bb0] transition-colors text-center font-semibold shadow-md">
-                                    🎯 Registrarse al taller
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+                </div>           
             </div>
         </div>
     </div>
@@ -566,17 +720,7 @@
                 <div class="bg-gray-50 rounded-lg p-6">
                     <h3 class="text-xl font-bold text-[#061d3f] mb-4">Miércoles 8 de Octubre</h3>
                     <div class="space-y-4">
-                        <!-- Inauguración -->
-                        <div class="flex items-start">
-                            <span class="text-[#23b0d8] font-semibold w-32">09:30 - 10:00</span>
-                            <div>
-                                <h4 class="font-semibold text-[#061d3f]">Inauguración del Congreso CONACIC 2024</h4>
-                                <p class="text-gray-600 mb-2">¡Bienvenidos al Congreso Nacional de Ciencias de la Computación 2024!</p>
-                                <a href="https://dcytic2.webex.com/dcytic2/j.php?MTID=m0fa3cc4403c2e070199fbe2158c0823c" class="inline-block bg-[#23b0d8] text-white px-4 py-2 rounded-lg hover:bg-[#1a8bb0] transition-colors">
-                                    Ingresar a la Inauguración
-                                </a>
-                            </div>
-                        </div>
+                        
 
                         <!-- Dr. Erik Rodner -->
                         <div class="flex items-start">
@@ -755,7 +899,7 @@
 
                 <!-- Miércoles 8 de Octubre -->
                 <div class="bg-gray-50 rounded-lg p-6">
-                    <h3 class="text-xl font-bold text-[#061d3f] mb-4">Miércoles 8 de Octubre</h3>
+                    
                     <div class="space-y-4">
                         <div class="flex items-start">
                             <span class="text-[#23b0d8] font-semibold w-32">16:00-19:00</span>
@@ -887,5 +1031,42 @@
             console.error("No se encontró el elemento tab-" + tabName);
         }
     }
+
+    // Función para manejar las sub-pestañas dentro del programa general
+    function openSubTab(subTabName) {
+        console.log("Función openSubTab llamada con: " + subTabName);
+        
+        // Ocultar todas las sub-pestañas
+        var subTabContents = document.getElementsByClassName("subtab-content");
+        for (var i = 0; i < subTabContents.length; i++) {
+            subTabContents[i].classList.add("hidden");
+        }
+        
+        // Mostrar la sub-pestaña seleccionada
+        var selectedSubTab = document.getElementById("subtab-content-" + subTabName);
+        if (selectedSubTab) {
+            selectedSubTab.classList.remove("hidden");
+        }
+        
+        // Actualizar estilos de los botones de sub-pestañas (igual que las pestañas principales)
+        var subTabButtons = document.getElementsByClassName("subtab-btn");
+        for (var i = 0; i < subTabButtons.length; i++) {
+            subTabButtons[i].classList.remove("border-b-2", "border-[#23b0d8]", "text-[#061d3f]");
+            subTabButtons[i].classList.add("text-gray-500");
+        }
+        
+        // Resaltar el botón de la sub-pestaña seleccionada (igual que las pestañas principales)
+        var selectedSubButton = document.getElementById("subtab-" + subTabName);
+        if (selectedSubButton) {
+            selectedSubButton.classList.add("border-b-2", "border-[#23b0d8]", "text-[#061d3f]");
+            selectedSubButton.classList.remove("text-gray-500");
+        }
+    }
+
+    // Inicializar las sub-pestañas al cargar la página
+    document.addEventListener('DOMContentLoaded', function() {
+        // Mostrar la primera sub-pestaña por defecto
+        openSubTab('lunes6');
+    });
 </script>
 @endsection
