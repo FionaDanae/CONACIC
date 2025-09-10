@@ -247,33 +247,66 @@
     <script>
         // Mejorar la experiencia del menú responsivo
         document.addEventListener('DOMContentLoaded', function() {
+            // Funcionalidad para navbar en app.blade.php
             const navbarToggler = document.querySelector('.navbar-toggler');
             const navbarCollapse = document.querySelector('.navbar-collapse');
-            const toggleIcon = navbarToggler.querySelector('i');
             
-            navbarToggler.addEventListener('click', function() {
-                setTimeout(() => {
-                    if (navbarCollapse.classList.contains('show')) {
-                        toggleIcon.classList.remove('fa-bars');
-                        toggleIcon.classList.add('fa-times');
-                    } else {
-                        toggleIcon.classList.remove('fa-times');
-                        toggleIcon.classList.add('fa-bars');
-                    }
-                }, 100);
-            });
+            if (navbarToggler && navbarCollapse) {
+                const toggleIcon = navbarToggler.querySelector('i');
+                
+                navbarToggler.addEventListener('click', function() {
+                    setTimeout(() => {
+                        if (navbarCollapse.classList.contains('show')) {
+                            if (toggleIcon) {
+                                toggleIcon.classList.remove('fa-bars');
+                                toggleIcon.classList.add('fa-times');
+                            }
+                        } else {
+                            if (toggleIcon) {
+                                toggleIcon.classList.remove('fa-times');
+                                toggleIcon.classList.add('fa-bars');
+                            }
+                        }
+                    }, 100);
+                });
+                
+                // Cerrar menú al hacer clic en un enlace (en móvil)
+                const navLinks = document.querySelectorAll('.navbar-nav .nav-link:not(.dropdown-toggle)');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        if (window.innerWidth < 992 && typeof bootstrap !== 'undefined') {
+                            const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                                hide: true
+                            });
+                            
+                            // Restaurar el icono del botón hamburguesa
+                            if (toggleIcon) {
+                                toggleIcon.classList.remove('fa-times');
+                                toggleIcon.classList.add('fa-bars');
+                            }
+                        }
+                    });
+                });
+            }
             
-            // Cerrar menú al hacer clic en un enlace (en móvil)
-            const navLinks = document.querySelectorAll('.navbar-nav .nav-link:not(.dropdown-toggle)');
-            navLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    if (window.innerWidth < 992) {
-                        const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
-                            hide: true
+            // Soporte para menú móvil en welcome.blade.php
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    
+                    // Cambiar icono del botón
+                    const icons = mobileMenuButton.querySelectorAll('svg');
+                    if (icons && icons.length >= 2) {
+                        icons.forEach(icon => {
+                            icon.classList.toggle('hidden');
                         });
                     }
                 });
-            });
+            }
+            
         });
     </script>
 </body>
